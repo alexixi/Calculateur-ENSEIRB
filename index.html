@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur moyenne CPBx</title>
+    <meta name="author" content="Alexis">
+    <meta name="creator" content="Alexis">
+    <meta name="robots" content="index">
+    <meta name="description" content="Calculez facilement et rapidement votre moyenne générale par semestre et partagez-la à vos amis">
+    <meta name="keywords" content="cpbx, CPBx, clalculateur, moyenne, prépa, bordeaux, université, cycle préparatoire de bordeaux, classe préparatoire">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+
+    <!-- Apparence réseaux sociaux -->
+    <meta property="og:title" content="CPBx - Calculez votre moyenne facilement" />
+    <meta property="og:description" content="Calculez facilement et rapidement votre moyenne générale par semestre et partagez-la à vos amis">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Moyenne CPBx" />
+    <meta property="og:url" content="https://calculateur-moyenne-cpbx.000webhostapp.com" />
+    <meta property="og:image" content="https://calculateur-moyenne-cpbx.000webhostapp.com/images/screenshots/screenshot-7.png" />
+    <meta property="twitter:domain" content="calculateur-moyenne-cpbx.000webhostapp.com">
+    <meta property="twitter:url" content="https://calculateur-moyenne-cpbx.000webhostapp.com/">
+    <meta name="twitter:title" content="CPBx - Calculez votre moyenne facilement">
+    <meta name="twitter:description" content="Calculez facilement et rapidement votre moyenne générale par semestre et partagez-la à vos amis">
+    <meta name="twitter:image" content="https://calculateur-moyenne-cpbx.000webhostapp.com/images/screenshots/screenshot-7.png">
+    
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://kit.fontawesome.com/775facc0e6.js" crossorigin="anonymous"></script>
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-site-verification" content="NNM1XJJSOcPxT2CGEVLzsNmzRuoJbavQ5SBFTAqKcBo" />
+    <meta name="googlebot" content="notranslate">
+
+    <!-- PWA support -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="application-name" content="Moyenne CPBx">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#184e74">
+    <!-- PWA ios support -->
+    <meta name="apple-mobile-web-app-title" content="Moyenne CPBx">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#184e74">
+    <link rel="apple-touch-icon" sizes="16x16" type="image/png" href="/images/ios/16.png"/>
+    <link rel="apple-touch-icon" sizes="20x20" type="image/png" href="/images/ios/20.png"/>
+    <link rel="apple-touch-icon" sizes="29x29" type="image/png" href="/images/ios/29.png"/>
+    <link rel="apple-touch-icon" sizes="32x32" type="image/png" href="/images/ios/32.png"/>
+    <link rel="apple-touch-icon" sizes="40x40" type="image/png" href="/images/ios/40.png"/>
+    <link rel="apple-touch-icon" sizes="50x50" type="image/png" href="/images/ios/50.png"/>
+    <link rel="apple-touch-icon" sizes="57x57" type="image/png" href="/images/ios/57.png"/>
+    <link rel="apple-touch-icon" sizes="58x58" type="image/png" href="/images/ios/58.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" type="image/png" href="/images/ios/60.png"/>
+    <link rel="apple-touch-icon" sizes="64x64" type="image/png" href="/images/ios/64.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" type="image/png" href="/images/ios/72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" type="image/png" href="/images/ios/76.png"/>
+    <link rel="apple-touch-icon" sizes="80x80" type="image/png" href="/images/ios/80.png"/>
+    <link rel="apple-touch-icon" sizes="87x87" type="image/png" href="/images/ios/87.png"/>
+    <link rel="apple-touch-icon" sizes="100x100" type="image/png" href="/images/ios/100.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" type="image/png" href="/images/ios/114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" type="image/png" href="/images/ios/120.png"/>
+    <link rel="apple-touch-icon" sizes="128x128" type="image/png" href="/images/ios/128.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" type="image/png" href="/images/ios/144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" type="image/png" href="/images/ios/152.png"/>
+    <link rel="apple-touch-icon" sizes="167x167" type="image/png" href="/images/ios/167.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="/images/ios/180.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" type="image/png" href="/images/ios/192.png"/>
+    <link rel="apple-touch-icon" sizes="256x256" type="image/png" href="/images/ios/256.png"/>
+    <link rel="apple-touch-icon" sizes="512x512" type="image/png" href="/images/ios/512.png"/>
+    <link rel="apple-touch-icon" sizes="1024x1024" type="image/png" href="/images/ios/1024.png"/>
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1290-2796.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2796-1290.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2556-1179.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+</head>
+<body lang="fr">
+    <div id="page">
+        <div id="share-bloc-haut" class="share-bloc" :class="shareClass()" @click="shareMoyenne()">
+            <span id="share-text">Partager</span>
+            <i class="fa-solid fa-share share-icon"></i>
+        </div>
+        <div id="semestre-conteiner">
+            <label for="semestre-select">Semestre</label>
+            <select v-model="semestre_selectionne" name="semestre" id="semestre-select">
+                <option v-for=" semestre in semestres ">{{ semestre }}</option>
+            </select>
+        </div>
+        <div id="filiere-conteiner" v-if="semestre_selectionne != 'Total'">
+            <label for="filiere-select">Filière</label>
+            <select v-model="filiere_apparente" name="filiere" id="filiere-select">
+                <option v-for=" filiere in getFilieres() ">{{ filiere }}</option>
+            </select>
+        </div>
+        <div id="semestre-1" v-if="semestre_selectionne === 'Semestre 1'" class="matieres-conteiner">
+            <div class="matiere" v-for=" matiere in semestre1.tronc_commun " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-if="filiere_apparente === 'Bio'" v-for=" matiere in semestre1.bio " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-else-if="filiere_apparente === 'MPC'" v-for=" matiere in semestre1.mpc " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="points-sport-conteiner" v-if="semestre_selectionne != 'Total'">
+                <label for="points-sport-input-s1">Points sport</label>
+                <input v-model.number="points_sport_s1" :class="validePtsSport(points_sport_s1) ? 'valide' : 'invalide' " type="number" class="points-sport-input" id="points-sport-input-s1" min="0" max="5" step="1" autocomplete="off">
+                <span v-if="!validePtsSport(points_sport_s1)" class="invalid-note">Non valide</span>
+            </div>
+        </div>
+        <div id="semestre-2" v-else-if="semestre_selectionne === 'Semestre 2'" class="matieres-conteiner">
+            <div class="matiere" v-if="filiere_apparente === 'Bio'" v-for=" matiere in semestre2.bio " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-else-if="filiere_apparente === 'MP' || filiere_apparente === 'PC'" v-for=" matiere in semestre2.mpc.tronc_commun " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-if="filiere_apparente === 'MP'" v-for=" matiere in semestre2.mpc.mp " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-if="filiere_apparente === 'PC'" v-for=" matiere in semestre2.mpc.pc " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-for=" matiere in semestre2.tronc_commun " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="points-sport-conteiner" v-if="semestre_selectionne != 'Total'">
+                <label for="points-sport-input-s2">Points sport</label>
+                <input v-model.number="points_sport_s2" :class="validePtsSport(points_sport_s2) ? 'valide' : 'invalide' " type="number" class="points-sport-input" id="points-sport-input-s2" min="0" max="5" step="1" autocomplete="off">
+                <span v-if="!validePtsSport(points_sport_s2)" class="invalid-note">Non valide</span>
+            </div>
+        </div>
+        <div id="semestre-3" v-else-if="semestre_selectionne === 'Semestre 3'" class="matieres-conteiner">
+            <div class="matiere" v-if="filiere_apparente === 'Bio'" v-for=" matiere in semestre3.bio " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-else-if="filiere_apparente === 'MP' || filiere_apparente === 'PC'" v-for=" matiere in semestre3.mpc.tronc_commun " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-if="filiere_apparente === 'MP'" v-for=" matiere in semestre3.mpc.mp " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-if="filiere_apparente === 'PC'" v-for=" matiere in semestre3.mpc.pc " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-for=" matiere in semestre3.tronc_commun " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="points-sport-conteiner" v-if="semestre_selectionne != 'Total'">
+                <label for="points-sport-input-s3">Points sport</label>
+                <input v-model.number="points_sport_s3" :class="validePtsSport(points_sport_s3) ? 'valide' : 'invalide' " type="number" class="points-sport-input" id="points-sport-input-s3" min="0" max="5" step="1" autocomplete="off">
+                <span v-if="!validePtsSport(points_sport_s3)" class="invalid-note">Non valide</span>
+            </div>
+        </div>
+        <div id="semestre-4" v-else-if="semestre_selectionne === 'Semestre 4'" class="matieres-conteiner">
+            <div class="matiere" v-if="filiere_apparente === 'Bio'" v-for=" matiere in semestre4.bio " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-if="filiere_apparente === 'Géologie'" v-for=" matiere in semestre4.geol " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-else-if="filiere_apparente === 'MP'" v-for=" matiere in semestre4.mp " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-else-if="filiere_apparente === 'PC'" v-for=" matiere in semestre4.pc " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="matiere" v-for=" matiere in semestre4.tronc_commun " >
+                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                <span v-else class="invalid-note">Note non valide</span>
+            </div>
+            <div class="points-sport-conteiner" v-if="semestre_selectionne != 'Total'">
+                <label for="points-sport-input-s4">Points sport</label>
+                <input v-model.number="points_sport_s4" :class="validePtsSport(points_sport_s4) ? 'valide' : 'invalide' " type="number" class="points-sport-input" id="points-sport-input-s4" min="0" max="5" step="1" autocomplete="off">
+                <span v-if="!validePtsSport(points_sport_s4)" class="invalid-note">Non valide</span>
+            </div>
+        </div>
+        <div id="total" v-if="semestre_selectionne == 'Total'">
+            <h3 class="annee-result">Première année : {{ calculMoyenneAnnee(1) }}</h3>
+            <div class="semestre" v-for=" sem in total ">
+                <div class="alinea" v-if="sem.nom.endsWith(1) || sem.nom.endsWith(2)">
+                    <label :for="clean(sem.nom)+'-input'"> {{ sem.nom }} </label>
+                    <input v-model.number="sem.note" type="number" class="note-input" :class="valideInputClass(sem.note)" :name="'moyenne du '+clean(sem.nom)" :id="clean(sem.nom)+'-input'" min="0" max="20" step="0.1" autocomplete="off">
+                    <span v-if="!valideSaisieNote(sem.note)" class="invalid-note">Note non valide</span>
+                </div>
+            </div>
+            <h3 class="annee-result">Deuxième année : {{ calculMoyenneAnnee(2) }}</h3>
+            <div class="semestre" v-for=" sem in total " >
+                <div class="alinea" v-if="sem.nom.endsWith(3) || sem.nom.endsWith(4)">
+                    <label :for="clean(sem.nom)+'-input'"> {{ sem.nom }} </label>
+                    <input v-model.number="sem.note" type="number" class="note-input" :class="valideInputClass(sem.note)" :name="'moyenne du '+clean(sem.nom)" :id="clean(sem.nom)+'-input'" min="0" max="20" step="0.1" autocomplete="off">
+                    <span v-if="!valideSaisieNote(sem.note)" class="invalid-note">Note non valide</span>
+                </div>
+            </div>
+            <h2 class="moyenne">Total : <strong>{{ calculMoyenneAnnee() }}</strong> <span id="emoji">{{ emoji(calculMoyenneAnnee()) }}</span></h2>
+        </div>
+        <div id="result-conteiner" v-if="semestre_selectionne != 'Total'">
+            <h2 class="moyenne">Votre moyenne : <strong>{{ calculMoyenne() }}</strong> <span id="emoji">{{ emoji(moyenne) }}</span></h2>
+        </div>
+        <div id="share-bloc-bas" class="share-bloc" v-if="sharable && (moyenne || moyenne === 0)" @click="shareMoyenne()">
+            <span id="share-text">Partager</span>
+            <i class="fa-solid fa-share share-icon"></i>
+        </div>
+        <div id="save-data">
+            <input type="checkbox" id="save-data-checkbox" name="save-data-checkbox" v-model="save_data" autocom plete="on">
+            <label for="save-data-checkbox">Garder les notes en mémoire</label>
+        </div>
+    </div>
+    <footer>Créé avec amour par <a target="_blank" href="https://www.youtube.com/watch?v=EZEfN5z8Mlg&t=88s" id="gigachad">Alexis</a> | Infos basées sur <a id="source" target="_blank" href="https://formations.u-bordeaux.fr/#/details-formation?type=formation&id=54874">cette source</a></footer>
+
+    <script>
+        let selectedSemestre = localStorage.semestre || 'Semestre 1';
+        const urlParams = new URLSearchParams(window.location.search);
+        const semestreParam = urlParams.get('semestre')
+        const selectedSemestreNumber = parseInt(semestreParam);
+        if (!isNaN(selectedSemestreNumber) && selectedSemestreNumber >= 1 && selectedSemestreNumber <= 4) {
+            selectedSemestre = `Semestre ${selectedSemestreNumber}`;
+            localStorage.semestre = selectedSemestre;
+            window.history.replaceState(null, null, window.location.origin)
+        } else if (semestreParam && semestreParam.toLowerCase() == 'total') {
+            selectedSemestre = 'Total';
+            localStorage.semestre = selectedSemestre;
+            window.history.replaceState(null, null, window.location.origin)
+        };
+        const app = Vue.createApp({
+            data(){
+                return {
+                    save_data: localStorage.save_data || true,
+                    init_done: false,
+                    moyenne: '',
+                    sharable: 'share' in navigator,
+                    semestres: ['Semestre 1', 'Semestre 2', 'Semestre 3', 'Semestre 4', 'Total'],
+                    semestre_selectionne: selectedSemestre,
+                    filiere_utilisateur: localStorage.filiere_utilisateur || '',
+                    filiere_apparente: localStorage.filiere_apparente || '',
+                    all_filieres: ["MPC", "MP", "PC", "Bio", "Géologie"],
+                    equiv_filieres: {geologie: 'Bio', mp: 'MPC', pc: 'MPC'},
+                    semestre1: {
+                        filieres: ['MPC', 'Bio'],
+                        tronc_commun: [
+                            {nom: "Mathématiques", note: '', coef: 5.5},
+                            {nom: "Outils maths", note: '', coef: 3.5},
+                            {nom: "Optique", note: '', coef: 1.75},
+                            {nom: "Mécanique", note: '', coef: 1.75},
+                            {nom: "Chimie", note: '', coef: 3.5},
+                            {nom: "Lettre et com", note: '', coef: 3},
+                            {nom: "Anglais", note: '', coef: 3}
+                        ],
+                        bio: [
+                            {nom: "Biologie", note: '', coef: 5},
+                            {nom: "Géologie", note: '', coef: 3}
+                        ],
+                        mpc: [
+                            {nom: "Maths MPC", note: '', coef: 4},
+                            {nom: "Informatique", note: '', coef: 4}
+                        ]
+                    },
+                    semestre2: {
+                        filieres: ['MP', 'PC', 'Bio'],
+                        tronc_commun: [
+                            {nom: "Anglais", note: '', coef: 3},
+                            {nom: "Lettre et com", note: '', coef: 3}
+                        ],
+                        bio: [
+                            {nom: "Macromolécules", note: '', coef: 3},
+                            {nom: "Biologie cellulaire", note: '', coef: 4.8},
+                            {nom: "Microbiologie", note: '', coef: 3},
+                            {nom: "Synthèse", note: '', coef: 1.2},
+                            {nom: "Mathématiques", note: '', coef: 5},
+                            {nom: "Chimie", note: '', coef: 5},
+                            {nom: "Physique des fluides", note: '', coef: 2},
+                        ],
+                        mpc: {
+                            tronc_commun: [
+                                {nom: "Analyse", note: '', coef: 4.5},
+                                {nom: "Algèbre", note: '', coef: 4.5},
+                                {nom: "Thermodynamique", note: '', coef: 1.8},
+                                {nom: "Électrocinétique", note: '', coef: 1.8},
+                                {nom: "Électromagnétisme", note: '', coef: 2.25},
+                                {nom: "Mécanique ", note: '', coef: 1.35},
+                                {nom: "TP Physique", note: '', coef: 1.8}
+                            ],
+                            mp : [
+                                {nom: "Chimie Inorganique", note: '', coef: 3},
+                                {nom: "Informatique", note: '', coef: 3}
+                            ],
+                            pc: [
+                                {nom: "Chimie Organique", note: '', coef: 3},
+                                {nom: "Chimie Inorganique", note: '', coef: 3}
+                            ]
+                        }
+                    },
+                    semestre3: {
+                        filieres: ['MP', 'PC', 'Bio'],
+                        tronc_commun: [
+                            {nom: "Anglais", note: '', coef: 3},
+                            {nom: "Lettre et com", note: '', coef: 3}
+                        ],
+                        bio: [
+                            {nom: "Biotechnologie", note: '', coef: 3},
+                            {nom: "Tissus animaux et végétaux", note: '', coef: 1.8},
+                            {nom: "Biochimie", note: '', coef: 3.6},
+                            {nom: "Biologie des organismes", note: '', coef: 3.6},
+                            {nom: "Mathématiques", note: '', coef: 3.5},
+                            {nom: "Chimie", note: '', coef: 4},
+                            {nom: "Physique", note: '', coef: 2.5},
+                            {nom: "BioInformatique", note: '', coef: 2},
+                        ],
+                        mpc: {
+                            tronc_commun: [
+                                {nom: "Analyse", note: '', coef: 4.5},
+                                {nom: "Algèbre", note: '', coef: 4.5},
+                                {nom: "Thermodynamique", note: '', coef: 2.52},
+                                {nom: "Électromagnétisme", note: '', coef: 2.52},
+                                {nom: "Mécanique ", note: '', coef: 2.52},
+                                {nom: "TP Physique", note: '', coef: 1.44}
+                            ],
+                            mp : [
+                                {nom: "Atomistique", note: '', coef: 3},
+                                {nom: "Informatique", note: '', coef: 3}
+                            ],
+                            pc: [
+                                {nom: "Atomistique", note: '', coef: 3},
+                                {nom: "Thermochimie", note: '', coef: 3}
+                            ]
+                        }
+                    },
+                    semestre4: {
+                        filieres: ['MP', 'PC', 'Bio', 'Géologie'],
+                        tronc_commun: [
+                            {nom: "Anglais", note: '', coef: 3},
+                            {nom: "Lettre et com", note: '', coef: 3},
+                            {nom: "Projet encadré", note: '', coef: 6}
+                        ],
+                        mp: [
+                            {nom: "Mathématiques", note: '', coef: 9},
+                            {nom: "Mécanique des fluides", note: '', coef: 2.7},
+                            {nom: "Optique ondulatoire", note: '', coef: 1.2},
+                            {nom: "Méca ondulatoire et relativité", note: '', coef: 2.1},
+                            {nom: "Informatique", note: '', coef: 3}
+                        ],
+                        pc: [
+                            {nom: "Chimie", note: '', coef: 10},
+                            {nom: "Mathématiques", note: '', coef: 3},
+                            {nom: "Mécanique des fluides", note: '', coef: 3},
+                            {nom: "Informatique", note: '', coef: 2}
+                        ],
+                        bio: [
+                            {nom: "Nutrition", note: '', coef: 2.25},
+                            {nom: "Reproduction", note: '', coef: 4.5},
+                            {nom: "Immunologie", note: '', coef: 2.25},
+                            {nom: "Mathématiques", note: '', coef: 3},
+                            {nom: "Physique", note: '', coef: 2},
+                            {nom: "Chimie Bio", note: '', coef: 2},
+                            {nom: "BioInformatique", note: '', coef: 2}
+                        ],
+                        geol: [
+                            {nom: "Géologie", note: '', coef: 9},
+                            {nom: "Mathématiques", note: '', coef: 3},
+                            {nom: "Physique", note: '', coef: 2},
+                            {nom: "Chimie", note: '', coef: 2},
+                            {nom: "BioInformatique", note: '', coef: 2}
+                        ]
+                    },
+                    total: [
+                        {nom: "Semestre 1", note: ''},
+                        {nom: "Semestre 2", note: ''},
+                        {nom: "Semestre 3", note: ''},
+                        {nom: "Semestre 4", note: ''}
+                ],
+                    points_sport_s1: localStorage.ptssport1 || '',
+                    points_sport_s2: localStorage.ptssport2 || '',
+                    points_sport_s3: localStorage.ptssport3 || '',
+                    points_sport_s4: localStorage.ptssport4 || ''
+                }
+            },
+            watch:{
+                save_data(newState) {
+                    if (newState) {
+                        localStorage.semestre = this.getSelectedSemestre();
+                        if (this.getFiliereApparente() != '') {
+                            localStorage.filiere_apparente = this.getFiliereApparente();
+                        };
+                        if (this.getFiliereUtilisateur() != '') {
+                            localStorage.filiere_utilisateur = this.getFiliereUtilisateur();
+                        };
+                        if (this.getPtsSport(1) != '') {
+                            localStorage.ptssport = this.getPtsSport(1);
+                        };
+                        if (this.getPtsSport(2) != '') {
+                            localStorage.ptssport = this.getPtsSport(2);
+                        };
+                        if (this.getPtsSport(3) != '') {
+                            localStorage.ptssport = this.getPtsSport(3);
+                        };
+                        if (this.getPtsSport(4) != '') {
+                            localStorage.ptssport = this.getPtsSport(4);
+                        };
+                    } else {
+                        localStorage.clear();
+                    }
+                    localStorage.save_data = newState;
+                    localStorage.semestre = this.getSelectedSemestre();
+                },
+                semestre_selectionne(newSemestre) {
+                    if (newSemestre != 'Total') {
+                        if (this.getFilieres().includes(this.getFiliereUtilisateur())) {
+                            this.setFiliereApparente(this.getFiliereUtilisateur())
+                        } else if (this.clean(this.getFiliereApparente()) in this.equiv_filieres) {
+                            this.setFiliereApparente(this.equiv_filieres[this.clean(this.getFiliereApparente())]);
+                        };
+                    };
+                    localStorage.semestre = newSemestre;
+                },
+                filiere_utilisateur(newFiliere) {
+                    if (this.saveDataStatus()) {
+                        localStorage.filiere_utilisateur = newFiliere;
+                    };
+                },
+                filiere_apparente(newFiliere) {
+                    if (newFiliere !== this.getFiliereUtilisateur()) {
+                        if (this.equiv_filieres[this.clean(this.getFiliereUtilisateur())] !== newFiliere && this.all_filieres.includes(newFiliere)) {
+                            this.setFiliereUtilisateur(newFiliere)
+                        };
+                    };
+                    if (this.saveDataStatus()) {
+                        localStorage.filiere_apparente = newFiliere;
+                    };
+                },
+                points_sport_s1(newPtsSport) {
+                    if (this.saveDataStatus()) {
+                        if (this.getPtsSport(1) === '') {
+                            localStorage.removeItem('ptssport1')
+                        } else {
+                            localStorage.ptssport1 = newPtsSport;
+                        };
+                    };
+                },
+                points_sport_s2(newPtsSport) {
+                    if (this.saveDataStatus()) {
+                        if (this.getPtsSport(2) === '') {
+                            localStorage.removeItem('ptssport2')
+                        } else {
+                            localStorage.ptssport2 = newPtsSport;
+                        };
+                    };
+                },
+                points_sport_s3(newPtsSport) {
+                    if (this.saveDataStatus()) {
+                        if (this.getPtsSport(3) === '') {
+                            localStorage.removeItem('ptssport3')
+                        } else {
+                            localStorage.ptssport3 = newPtsSport;
+                        };
+                    };
+                },
+                points_sport_s4(newPtsSport) {
+                    if (this.saveDataStatus()) {
+                        if (this.getPtsSport(4) === '') {
+                            localStorage.removeItem('ptssport4')
+                        } else {
+                            localStorage.ptssport4 = newPtsSport;
+                        };
+                    };
+                }
+            },
+            mounted () {
+                if (this.filiere_apparente === '' && this.all_filieres.includes(this.filiere_utilisateur)) {
+                    this.filiere_apparente = this.filiere_utilisateur
+                }
+                else if (this.filiere_utilisateur === '' && this.all_filieres.includes(this.filiere_apparente)) {
+                    this.filiere_utilisateur = this.filiere_apparente
+                };
+                for (let i = 1; i < 5; i++) {
+                    if (localStorage.getItem(`semestre${i}`)) {
+                        try {
+                            this[`semestre${i}`] = JSON.parse(localStorage.getItem(`semestre${i}`));
+                        } catch(e) {
+                            localStorage.removeItem(`semestre${i}`);
+                        };
+                    };
+                };
+                if (localStorage.getItem('total')) {
+                        try {
+                            this.total = JSON.parse(localStorage.getItem('total'));
+                        } catch(e) {
+                            localStorage.removeItem('total');
+                        };
+                    };
+                this.init_done = true;
+            },
+            methods: {
+                saveDataStatus() {
+                    return this.save_data
+                },
+                valideSaisieNote(note) {
+                    return note >= 0 && note <= 20;
+                },
+                valideNote(note) {
+                    return note!=='' && this.valideSaisieNote(note);
+                },
+                validePtsSport(note) {
+                    return note >= 0 && note <= 5;
+                },
+                shareClass() {
+                    if (!('share' in navigator)) {
+                        return 'unsharable';
+                    };
+                },
+                semestreNameClean() {
+                    return this.semestre_selectionne.toLowerCase().replace(' ', '');
+                },
+                getFilieres() {
+                    return this[this.semestreNameClean()]['filieres'];
+                },
+                getSelectedSemestre() {
+                    return this.semestre_selectionne;
+                },
+                getPtsSport(semestre) {
+                    if (semestre == 1) {
+                        return this.points_sport1;
+                    } else if (semestre == 2) {
+                        return this.points_sport2;
+                    } else if (semestre == 3) {
+                        return this.points_sport3;
+                    } else if (semestre == 4) {
+                        return this.points_sport4;
+                    };
+                },
+                getFiliereUtilisateur() {
+                    return this.filiere_utilisateur;
+                },
+                setFiliereUtilisateur(newFiliere) {
+                    this.filiere_utilisateur = newFiliere;
+                },
+                getFiliereApparente() {
+                    return this.filiere_apparente;
+                },
+                setFiliereApparente(newFiliere) {
+                    this.filiere_apparente = newFiliere;
+                },
+                saveData() {
+                    if (this.save_data) {
+                        localStorage.setItem(this.semestreNameClean(), JSON.stringify(this[this.semestreNameClean()]));
+                    };
+                },
+                valideInputClass(note) {
+                    if (this.valideSaisieNote(note)) {
+                        return 'valide'
+                    }
+                    return 'invalide'
+                },
+                checkRemplissage(semestre) {
+                    for (cat in this[semestre]) {
+                        if (semestre == 'total') {
+                            if (this[semestre][cat]['note'] !== '') {
+                                return true;
+                            };
+                        }
+                        else {
+                            if (cat == 'filieres') {
+                                    continue;
+                            };
+                            for (e in this[semestre][cat]) {
+                                if ('nom' in this[semestre][cat][e]) {
+                                    if (this[semestre][cat][e]['note'] !== '') {
+                                        return true;
+                                    };
+                                }
+                                else {
+                                    for (se in this[semestre][cat][e]) {
+                                        if (this[semestre][cat][e][se]['note'] !== '') {
+                                            return true;
+                                        };
+                                    };
+                                };
+                            };
+                        }
+                    };
+                    return false;
+                },
+                calculMoyenne() {
+                    if (this.init_done) {
+                        if (this.checkRemplissage(this.semestreNameClean())) {
+                            this.saveData();
+                        } else {
+                            localStorage.removeItem(this.semestreNameClean());
+                        };
+                    };
+                    tot_notes = 0;
+                    tot_coef = 0;
+                    if (this.semestre_selectionne === 'Semestre 1') {
+                        for (i in this.semestre1.tronc_commun) {
+                            let matiere = this.semestre1.tronc_commun[i];
+                            if (this.valideNote(matiere.note)) {
+                                tot_notes += matiere.note * matiere.coef;
+                                tot_coef += matiere.coef;
+                            };
+                        };
+                        if (this.filiere_apparente === "Bio") {
+                            for (i in this.semestre1.bio) {
+                                let matiere = this.semestre1.bio[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        }
+                        else if (this.filiere_apparente === "MPC") {
+                            for (i in this.semestre1.mpc) {
+                                let matiere = this.semestre1.mpc[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        };
+                        if (this.validePtsSport(this.points_sport_s1)) {
+                            ptssport = (this.points_sport_s1 / 10);
+                        };
+                    }
+                    else if (this.semestre_selectionne === 'Semestre 2') {
+                        for (i in this.semestre2.tronc_commun) {
+                            let matiere = this.semestre2.tronc_commun[i];
+                            if (this.valideNote(matiere.note)) {
+                                tot_notes += matiere.note * matiere.coef;
+                                tot_coef += matiere.coef;
+                            };
+                        };
+                        if (this.filiere_apparente === "Bio") {
+                            for (i in this.semestre2.bio) {
+                                let matiere = this.semestre2.bio[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        }
+                        else if (this.filiere_apparente === "MP" || this.filiere_apparente === "PC") {
+                            for (i in this.semestre2.mpc.tronc_commun) {
+                                let matiere = this.semestre2.mpc.tronc_commun[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                            if (this.filiere_apparente === "MP") {
+                                for (i in this.semestre2.mpc.mp) {
+                                    let matiere = this.semestre2.mpc.mp[i];
+                                    if (this.valideNote(matiere.note)) {
+                                        tot_notes += matiere.note * matiere.coef;
+                                        tot_coef += matiere.coef;
+                                    };
+                                };
+                            }
+                            else if (this.filiere_apparente === "PC") {
+                                for (i in this.semestre2.mpc.pc) {
+                                    let matiere = this.semestre2.mpc.pc[i];
+                                    if (this.valideNote(matiere.note)) {
+                                        tot_notes += matiere.note * matiere.coef;
+                                        tot_coef += matiere.coef;
+                                    };
+                                };
+                            };
+                        };
+                        if (this.validePtsSport(this.points_sport_s2)) {
+                            ptssport = (this.points_sport_s2 / 10);
+                        };
+                    }
+                    else if (this.semestre_selectionne === 'Semestre 3') {
+                        for (i in this.semestre3.tronc_commun) {
+                            let matiere = this.semestre3.tronc_commun[i];
+                            if (this.valideNote(matiere.note)) {
+                                tot_notes += matiere.note * matiere.coef;
+                                tot_coef += matiere.coef;
+                            };
+                        };
+                        if (this.filiere_apparente === "Bio") {
+                            for (i in this.semestre3.bio) {
+                                let matiere = this.semestre3.bio[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        }
+                        else if (this.filiere_apparente === "MP" || this.filiere_apparente === "PC") {
+                            for (i in this.semestre3.mpc.tronc_commun) {
+                                let matiere = this.semestre3.mpc.tronc_commun[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                            if (this.filiere_apparente === "MP") {
+                                for (i in this.semestre3.mpc.mp) {
+                                    let matiere = this.semestre3.mpc.mp[i];
+                                    if (this.valideNote(matiere.note)) {
+                                        tot_notes += matiere.note * matiere.coef;
+                                        tot_coef += matiere.coef;
+                                    };
+                                };
+                            }
+                            else if (this.filiere_apparente === "PC") {
+                                for (i in this.semestre3.mpc.pc) {
+                                    let matiere = this.semestre3.mpc.pc[i];
+                                    if (this.valideNote(matiere.note)) {
+                                        tot_notes += matiere.note * matiere.coef;
+                                        tot_coef += matiere.coef;
+                                    };
+                                };
+                            };
+                        };
+                        if (this.validePtsSport(this.points_sport_s3)) {
+                            ptssport = (this.points_sport_s3 / 10);
+                        };
+                    }
+                    else if (this.semestre_selectionne === 'Semestre 4') {
+                        for (i in this.semestre4.tronc_commun) {
+                                let matiere = this.semestre4.tronc_commun[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        if (this.filiere_apparente === "Bio") {
+                            for (i in this.semestre4.bio) {
+                                let matiere = this.semestre4.bio[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        }
+                        else if (this.filiere_apparente === "Géologie") {
+                            for (i in this.semestre4.geol) {
+                                let matiere = this.semestre4.geol[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        }
+                        else if (this.filiere_apparente === "MP") {
+                            for (i in this.semestre4.mp) {
+                                let matiere = this.semestre4.mp[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        }
+                        else if (this.filiere_apparente === "PC") {
+                            for (i in this.semestre4.pc) {
+                                let matiere = this.semestre4.pc[i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                };
+                            };
+                        };
+                        if (this.validePtsSport(this.points_sport_s4)) {
+                            ptssport = (this.points_sport_s4 / 10);
+                        };
+                    }
+                    moyenne = tot_notes / tot_coef;
+                    this.moyenne = moyenne;
+                    if (isNaN(moyenne)) {
+                        return " - ";
+                    };
+                    moyenne = moyenne + ptssport
+                    moyenne = Math.round((moyenne)*100)/100;
+                    if (moyenne > 20) {
+                        moyenne = 20;
+                    };
+                    this.saveData()
+                    return moyenne;
+                },
+                calculMoyenneAnnee(annee) {
+                    if (this.init_done) {
+                        if (this.checkRemplissage('total')) {
+                            this.saveData();
+                        } else {
+                            localStorage.removeItem('total');
+                        };
+                    };
+                    let somme_notes = 0
+                    let somme_coefs = 0
+                    for (i in this.total) {
+                        if (this.valideNote(this.total[i].note) && (!annee || this.total[i].nom.endsWith(annee*2) || this.total[i].nom.endsWith(annee*2-1))) {
+                            somme_notes += this.total[i].note
+                            somme_coefs += 1
+                        };
+                    };
+                    let moyenne = somme_notes / somme_coefs
+                    if (isNaN(moyenne)) {
+                        return " - ";
+                    };
+                    moyenne = Math.round((moyenne)*100)/100;
+                    if (moyenne > 20) {
+                        moyenne = 20;
+                    };
+                    return moyenne
+                },
+                clean(string) {
+                    return string.toLowerCase().split(' ').join('-').split('é').join('e').split('è').join('e').split('ê').join('e').split('à').join('a');
+                },
+                emoji(note) {
+                    if (note === '') {
+                        return '';
+                    };
+                    if (note < 0.5) {
+                        return '🥶';
+                    };
+                    if (note <= 1.8) {
+                        return '🙈';
+                    };
+                    if (note <= 2.3) {
+                        return '😶‍🌫️';
+                    };
+                    if (note <= 3.5) {
+                        return '🫠';
+                    };
+                    if (note <= 5) {
+                        return '🥲';
+                    };
+                    if (note <= 6.5) {
+                        return '😟';
+                    };
+                    if (note < 8) {
+                        return '☹️';
+                    };
+                    if (note < 9.5) {
+                        return '🙁';
+                    };
+                    if (note < 9.95) {
+                        return '😐';
+                    };
+                    if (note <= 10) {
+                        return '👀';
+                    };
+                    if (note < 11) {
+                        return '🙂';
+                    };
+                    if (note <= 12.5) {
+                        return '😃';
+                    };
+                    if (note <= 13.8) {
+                        return '😁';
+                    };
+                    if (note <= 14.4) {
+                        return '🤩';
+                    };
+                    if (note <= 15.5) {
+                        return '🥳';
+                    };
+                    if (note <= 16.5) {
+                        return '🤪';
+                    };
+                    if (note <= 18) {
+                        return '🥵';
+                    };
+                    if (note <= 19.5) {
+                        return '🤯';
+                    };
+                    if (note < 19.99) {
+                        return '🐐';
+                    };
+                    if (note <= 20) {
+                        return '🗿🍷';
+                    };
+                    return '';
+                },
+                shareMoyenne() {
+                    if (!('share' in navigator)) {
+                        return;
+                    }
+                    moyenne = this.calculMoyenne()
+                    let shareData = {
+                        title: 'Moyenne CPBx',
+                        url: window.location.origin
+                    };
+                    if (moyenne != '' && moyenne != ' - ' && moyenne != '-') {
+                        shareData.text = `J'ai ${moyenne} de moyenne générale au ${this.semestre_selectionne.toLowerCase()}\nToi aussi calcule ta moyenne sur ce site`;
+                    };
+                    navigator.share(shareData);
+                }
+            }
+        })
+        app.mount('#page')
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/serviceWorker.js');
+            };
+        });
+    </script>
+</body>
+</html>
