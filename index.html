@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculateur moyenne CPBx</title>
+    <title>Calculateur moyenne ENSEIRB</title>
     <meta name="author" content="Alexis">
     <meta name="creator" content="Alexis">
     <meta name="robots" content="index">
     <meta name="description" content="Calculez facilement et rapidement votre moyenne générale par semestre et partagez-la à vos amis">
-    <meta name="keywords" content="cpbx, CPBx, clalculateur, moyenne, prépa, bordeaux, université, cycle préparatoire de bordeaux, classe préparatoire">
+    <meta name="keywords" content="enseirb, ENSEIRB, matmeca, MATMECA, ENSEIRB-MATMECA, eirb, mmk, clalculateur, moyenne, inp, ingénieur, bordeaux, école, ingénieur, informatique, télécom, électronique, see, ri">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
 
     <!-- Apparence réseaux sociaux -->
-    <meta property="og:title" content="CPBx - Calculez votre moyenne facilement" />
+    <meta property="og:title" content="ENSEIRB - Calculez votre moyenne facilement" />
     <meta property="og:description" content="Calculez facilement et rapidement votre moyenne générale par semestre et partagez-la à vos amis">
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Moyenne CPBx" />
-    <meta property="og:url" content="https://calculateur-moyenne-cpbx.000webhostapp.com" />
-    <meta property="og:image" content="https://calculateur-moyenne-cpbx.000webhostapp.com/images/screenshots/screenshot-7.png" />
-    <meta property="twitter:domain" content="calculateur-moyenne-cpbx.000webhostapp.com">
-    <meta property="twitter:url" content="https://calculateur-moyenne-cpbx.000webhostapp.com/">
-    <meta name="twitter:title" content="CPBx - Calculez votre moyenne facilement">
+    <meta property="og:site_name" content="Moyenne ENSEIRB" />
+    <!-- <meta property="og:url" content="https://calculateur-moyenne-cpbx.000webhostapp.com" /> -->
+    <!-- <meta property="og:image" content="https://calculateur-moyenne-cpbx.000webhostapp.com/images/screenshots/screenshot-7.png" /> -->
+    <!-- <meta property="twitter:domain" content="calculateur-moyenne-cpbx.000webhostapp.com"> -->
+    <!-- <meta property="twitter:url" content="https://calculateur-moyenne-cpbx.000webhostapp.com/"> -->
+    <meta name="twitter:title" content="ENSEIRB - Calculez votre moyenne facilement">
     <meta name="twitter:description" content="Calculez facilement et rapidement votre moyenne générale par semestre et partagez-la à vos amis">
-    <meta name="twitter:image" content="https://calculateur-moyenne-cpbx.000webhostapp.com/images/screenshots/screenshot-7.png">
+    <!-- <meta name="twitter:image" content="https://calculateur-moyenne-cpbx.000webhostapp.com/images/screenshots/screenshot-7.png"> -->
     
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,18 +33,17 @@
     <script src="https://kit.fontawesome.com/775facc0e6.js" crossorigin="anonymous"></script>
 
     <meta name="format-detection" content="telephone=no">
-    <meta name="google-site-verification" content="NNM1XJJSOcPxT2CGEVLzsNmzRuoJbavQ5SBFTAqKcBo" />
-    <meta name="googlebot" content="notranslate">
+    <!-- <meta name="google-site-verification" content="NNM1XJJSOcPxT2CGEVLzsNmzRuoJbavQ5SBFTAqKcBo" /> -->
 
     <!-- PWA support -->
     <link rel="manifest" href="/manifest.webmanifest">
-    <meta name="application-name" content="Moyenne CPBx">
+    <meta name="application-name" content="Moyenne ENSEIRB">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#184e74">
+    <meta name="theme-color" content="#d9b534">
     <!-- PWA ios support -->
-    <meta name="apple-mobile-web-app-title" content="Moyenne CPBx">
+    <meta name="apple-mobile-web-app-title" content="Moyenne ENSEIRB">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#184e74">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#d9b534">
     <link rel="apple-touch-icon" sizes="16x16" type="image/png" href="/images/ios/16.png"/>
     <link rel="apple-touch-icon" sizes="20x20" type="image/png" href="/images/ios/20.png"/>
     <link rel="apple-touch-icon" sizes="29x29" type="image/png" href="/images/ios/29.png"/>
@@ -71,6 +70,7 @@
     <link rel="apple-touch-icon" sizes="256x256" type="image/png" href="/images/ios/256.png"/>
     <link rel="apple-touch-icon" sizes="512x512" type="image/png" href="/images/ios/512.png"/>
     <link rel="apple-touch-icon" sizes="1024x1024" type="image/png" href="/images/ios/1024.png"/>
+    <!-- Il faut refaire toutes ces images : -->
     <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
     <link rel="apple-touch-startup-image" href="/images/launch_images/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -120,8 +120,8 @@
                 <option v-for=" filiere in getFilieres() ">{{ filiere }}</option>
             </select>
         </div>
-        <div id="semestre-5" v-if="semestre_selectionne === 'Semestre 5'" class="matieres-conteiner">
-            <div class="ue" v-for=" (matiereList, ueName) in semestre5[longToShortNameFiliere(this.filiere_apparente)] " :key="ueName" >
+        <div v-if="semestre_selectionne === 'Semestre 5'" class="matieres-conteiner">
+            <div class="ue" v-for=" (matiereList, ueName) in semData()[this.filiere_apparente] " :key="ueName" >
                 <h3> {{ ueName }} : <strong>{{ calculMoyenneUe(matiereList) }}</strong> <span id="emoji">{{ emoji(calculMoyenneUe(matiereList)) }}</span></h3>
                 <div class="matiere" v-for=" matiere in matiereList " >
                     <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
@@ -165,11 +165,11 @@
     <footer>Créé avec amour par <a target="_blank" href="https://www.youtube.com/watch?v=EZEfN5z8Mlg&t=88s" id="gigachad">Alexis</a> | Infos basées sur <a id="source" target="_blank" href="https://formations.u-bordeaux.fr/#/details-formation?type=formation&id=54874">cette source</a></footer>
 
     <script>
-        let selectedSemestre = localStorage.semestre || 'Semestre 1';
+        let selectedSemestre = localStorage.semestre || 'Semestre 5';
         const urlParams = new URLSearchParams(window.location.search);
         const semestreParam = urlParams.get('semestre')
         const selectedSemestreNumber = parseInt(semestreParam);
-        if (!isNaN(selectedSemestreNumber) && selectedSemestreNumber >= 1 && selectedSemestreNumber <= 4) {
+        if (!isNaN(selectedSemestreNumber) && selectedSemestreNumber >= 5 && selectedSemestreNumber <= 10) {
             selectedSemestre = `Semestre ${selectedSemestreNumber}`;
             localStorage.semestre = selectedSemestre;
             window.history.replaceState(null, null, window.location.origin)
@@ -193,8 +193,8 @@
                     all_filieres: [],
                     equiv_filieres: {geologie: 'Bio', mp: 'MPC', pc: 'MPC'},
                     filieres: ['Informatique', 'Télécom', 'Matmeca', 'Électronique', 'SEE', 'RI'],
-                    semestre5: {
-                        info: {
+                    "Semestre 5": {
+                        "Informatique": {
                             "Algorithmique et mathématiques 1": [
                                 {nom: "Initiation à l'algorithmique", note: "", coef: 2},
                                 {nom: "Structures arborescentes", note: "", coef: 2},
@@ -219,7 +219,7 @@
                                 {nom: "Intégrer l'entreprise", note: "", coef: 1}
                             ]
                         },
-                        telecom: {
+                        "Télécom": {
                             "Informatique et Réseaux, niveau 1": [
                                 {nom: "Systèmes d'exploitation", note: "", coef: 4},
                                 {nom: "Algorithmique et structure de données", note: "", coef: 4},
@@ -240,7 +240,7 @@
                                 {nom: "Intégrer l'entreprise", note: "", coef: 1}
                             ]
                         },
-                        matmeca: {
+                        "Matmeca": {
                             "Mécanique I": [
                                 {nom: "Travaux pratiques de Mécanique", note: "", coef: 2},
                                 {nom: "Mécanique des milieux continus et déformables - Introduction & Fluides", note: "", coef: 2},
@@ -264,7 +264,7 @@
                                 {nom: "Intégrer l'entreprise", note: "", coef: 1}
                             ]
                         },
-                        elec: {
+                        "Électronique": {
                             "Mathématiques 1/ Physique 1": [
                                 {nom: "Techniques mathématiques pour l'ingénieur 1", note: "", coef: 2.5},
                                 {nom: "Probabilité", note: "", coef: 1.5},
@@ -289,7 +289,7 @@
                                 {nom: "Intégrer l'entreprise", note: "", coef: 1}
                             ]
                         },
-                        see: {
+                        "SEE": {
                             "Mathématiques / Physique (Mise à niveau)": [
                                 {nom: "Mathématiques Mise à niveau", note: "", coef: 0.45},
                                 {nom: "Physique pour l'électronique", note: "", coef: 0.2},
@@ -316,7 +316,7 @@
                                 {nom: "Compétences développées en entreprise lors du", note: "", coef: 1}
                             ]
                         },
-                        ri: {
+                        "RI": {
                             "Sciences de l'ingénieur 1": [
                                 {nom: "Outils mathématiques et physiques utiles à l'ingénieur R&I", note: "", coef: 0.7},
                                 {nom: "Logique et mathématiques discrètes", note: "", coef: 0.3},
@@ -339,15 +339,15 @@
                             ]
                         }
                     },
-                    semestre6: {
+                    "Semestre 6": {
                     },
-                    semestre7: {
+                    "Semestre 7": {
                     },
-                    semestre8: {
+                    "Semestre 8": {
                     },
-                    semestre9: {
+                    "Semestre 9": {
                     },
-                    semestre10: {  
+                    "Semestre 10": {  
                     }
                 }
             },
@@ -445,6 +445,9 @@
                 getSelectedSemestre() {
                     return this.semestre_selectionne;
                 },
+                semData() {
+                    return this[this.semestre_selectionne];
+                },
                 getPtsSport(semestre) {
                     if (semestre == 1) {
                         return this.points_sport1;
@@ -508,26 +511,6 @@
                     }
                     return false;
                 },
-                longToShortNameFiliere(semestre_long) {
-                    if (semestre_long === "Informatique") {
-                        return "info";
-                    }
-                    if (semestre_long === "Électronique") {
-                        return "elec";
-                    }
-                    if (semestre_long === "Télécom") {
-                        return "telecom";
-                    }
-                    if (semestre_long === "Matmeca") {
-                        return "matmeca";
-                    }
-                    if (semestre_long === "SEE") {
-                        return "see";
-                    }
-                    if (semestre_long === "RI") {
-                        return "ri";
-                    }
-                },
                 calculMoyenneUe(matiereList) {
                     tot_notes = 0;
                     tot_coef = 0;
@@ -558,14 +541,12 @@
                     }
                     tot_notes = 0;
                     tot_coef = 0;
-                    if (this.semestre_selectionne === 'Semestre 5') {
-                        for (ue in this.semestre5[this.longToShortNameFiliere(this.filiere_apparente)]) {
-                            for (i in this.semestre5[this.longToShortNameFiliere(this.filiere_apparente)][ue]) {
-                                let matiere = this.semestre5[this.longToShortNameFiliere(this.filiere_apparente)][ue][i];
-                                if (this.valideNote(matiere.note)) {
-                                    tot_notes += matiere.note * matiere.coef;
-                                    tot_coef += matiere.coef;
-                                }
+                    for (ue in this.semData()[this.filiere_apparente]) {
+                        for (i in this.semData()[this.filiere_apparente][ue]) {
+                            let matiere = this.semData()[this.filiere_apparente][ue][i];
+                            if (this.valideNote(matiere.note)) {
+                                tot_notes += matiere.note * matiere.coef;
+                                tot_coef += matiere.coef;
                             }
                         }
                     }
@@ -682,7 +663,7 @@
                     }
                     moyenne = this.calculMoyenne()
                     let shareData = {
-                        title: 'Moyenne CPBx',
+                        title: 'Moyenne ENSEIRB',
                         url: window.location.origin
                     }
                     if (moyenne != '' && moyenne != ' - ' && moyenne != '-') {

@@ -37,7 +37,7 @@ h3 {
 }
 
 select {
-    background-color: #eef1ff;
+    background-color: #fff8e0;
     border: 0;
     border-radius: 4px;
     font-size: 1.4rem;
@@ -48,7 +48,7 @@ select {
 }
 
 .note-input {
-    background-color: #eef1ff;
+    background-color: #fff8e0;
     border: 0;
     border-radius: 4px;
     font-size: 1.65rem;
@@ -61,22 +61,6 @@ select {
 
 .note-input.invalide, .points-sport-input.invalide {
     background-color: #ab4e4f;
-}
-
-.points-sport-conteiner {
-    margin-top: 1rem;
-}
-
-.points-sport-input {
-    background-color: #eef1ff;
-    border: 0;
-    border-radius: 4px;
-    font-size: 1.65rem;
-    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
-    height: 1.3rem;
-    width: 2.5rem;
-    margin-left: 0.65rem;
-    vertical-align: middle;
 }
 
 .note-coef {
