@@ -121,11 +121,14 @@
             </select>
         </div>
         <div id="semestre-5" v-if="semestre_selectionne === 'Semestre 5'" class="matieres-conteiner">
-            <div class="matiere" v-for=" matiere in semestre5[longToShortNameFiliere(this.filiere_apparente)] " >
-                <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
-                <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
-                <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
-                <span v-else class="invalid-note">Note non valide</span>
+            <div class="ue" v-for=" (matiereList, ueName) in semestre5[longToShortNameFiliere(this.filiere_apparente)] " :key="ueName" >
+                <h3> {{ ueName }} : <strong>{{ calculMoyenneUe(matiereList) }}</strong> <span id="emoji">{{ emoji(calculMoyenneUe(matiereList)) }}</span></h3>
+                <div class="matiere" v-for=" matiere in matiereList " >
+                    <label :for="clean(matiere.nom)+'-input'"> {{ matiere.nom }} </label>
+                    <input v-model.number="matiere.note" type="number" class="note-input" :class="valideInputClass(matiere.note)" :name="'note de '+clean(matiere.nom)" :id="clean(matiere.nom)+'-input'" min="0" max="20" step="0.5" autocomplete="off">
+                    <span v-if="valideSaisieNote(matiere.note)" class="note-coef">coef&nbsp;{{matiere.coef}}</span>
+                    <span v-else class="invalid-note">Note non valide</span>
+                </div>
             </div>
         </div>
         <div id="total" v-if="semestre_selectionne == 'Total'">
@@ -174,7 +177,7 @@
             selectedSemestre = 'Total';
             localStorage.semestre = selectedSemestre;
             window.history.replaceState(null, null, window.location.origin)
-        };
+        }
         const app = Vue.createApp({
             data(){
                 return {
@@ -191,104 +194,150 @@
                     equiv_filieres: {geologie: 'Bio', mp: 'MPC', pc: 'MPC'},
                     filieres: ['Informatique', 'Télécom', 'Matmeca', 'Électronique', 'SEE', 'RI'],
                     semestre5: {
-                        info: [
-                            {nom: "Initiation à l'algorithmique", note: "", coef: 2},
-                            {nom: "Structures arborescentes", note: "", coef: 2},
-                            {nom: "Traitement de l'Information", note: "", coef: 1.5},
-                            {nom: "Théorie de l'information", note: "", coef: 1.5},
-                            {nom: "Probabilités et statistiques", note: "", coef: 2.5},
-                            {nom: "Logique et preuve", note: "", coef: 2},
-                            {nom: "Environnement de travail", note: "", coef: 3},
-                            {nom: "Structure des ordinateurs", note: "", coef: 3},
-                            {nom: "Programmation impérative 1", note: "", coef: 4},
-                            {nom: "Projet d'algorithmique et de programmation", note: "", coef: 5},
-                            {nom: "LV1 Anglais", note: "", coef: 1.5},
-                            {nom: "LV2", note: "", coef: 1},
-                            {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
-                            {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
-                            {nom: "Intégrer l'entreprise", note: "", coef: 1}
-                        ],
-                        telecom: [
-                            {nom: "Systèmes d'exploitation", note: "", coef: 4},
-                            {nom: "Algorithmique et structure de données", note: "", coef: 4},
-                            {nom: "Introduction aux réseaux", note: "", coef: 3},
-                            {nom: "Programmation impérative", note: "", coef: 4},
-                            {nom: "Electronique de communications", note: "", coef: 1.5},
-                            {nom: "Signaux continus", note: "", coef: 3.5},
-                            {nom: "Probabilités", note: "", coef: 3.5},
-                            {nom: "Optimisation", note: "", coef: 1.5},
-                            {nom: "LV1 Anglais", note: "", coef: 1.5},
-                            {nom: "LV2", note: "", coef: 1},
-                            {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
-                            {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
-                            {nom: "Intégrer l'entreprise", note: "", coef: 1}
-                        ],
-                        matmeca: [
-                            {nom: "Travaux pratiques de Mécanique", note: "", coef: 2},
-                            {nom: "Mécanique des milieux continus et déformables - Introduction & Fluides", note: "", coef: 2},
-                            {nom: "Mécanique des Systèmes de Solides", note: "", coef: 3},
-                            {nom: "Mécanique des Milieux Continus Déformables - Résistance des Matériaux I", note: "", coef: 2},
-                            {nom: "Equations Différentielles", note: "", coef: 2.5},
-                            {nom: "Calcul Différentiel", note: "", coef: 2.5},
-                            {nom: "Certificat de calcul", note: "", coef: 0},
-                            {nom: "Analyse Numérique", note: "", coef: 4.5},
-                            {nom: "Calcul scientifique en Fortran 90  - I", note: "", coef: 4.5},
-                            {nom: "Travail Etude & Recherche - I", note: "", coef: 2},
-                            {nom: "LV1 Anglais", note: "", coef: 1.5},
-                            {nom: "LV2", note: "", coef: 1},
-                            {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
-                            {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
-                            {nom: "Intégrer l'entreprise", note: "", coef: 1}
-                        ],
-                        elec: [
-                            {nom: "Techniques mathématiques pour l'ingénieur 1", note: "", coef: 2.5},
-                            {nom: "Probabilité", note: "", coef: 1.5},
-                            {nom: "Electromagnétisme", note: "", coef: 1.5},
-                            {nom: "Physique pour l'électronique", note: "", coef: 1.5},
-                            {nom: "Electronique générale", note: "", coef: 3},
-                            {nom: "Projet/Travaux pratiques", note: "", coef: 3},
-                            {nom: "Circuits et systèmes I", note: "", coef: 3},
-                            {nom: "Logique combinatoire et logique séquentielle", note: "", coef: 3},
-                            {nom: "Architecture de base d'un processeurs", note: "", coef: 2},
-                            {nom: "Unix - Langage C", note: "", coef: 4},
-                            {nom: "LV1 Anglais", note: "", coef: 1.5},
-                            {nom: "LV2", note: "", coef: 1},
-                            {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
-                            {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
-                            {nom: "Intégrer l'entreprise", note: "", coef: 1}
-                        ],
-                        see: [
-                            {nom: "Mathématiques Mise à niveau", note: "", coef: 0.45},
-                            {nom: "Physique pour l'électronique", note: "", coef: 0.2},
-                            {nom: "Physique de la propagation", note: "", coef: 0.2},
-                            {nom: "Probabilités et statistiques", note: "", coef: 0.15},
-                            {nom: "Electronique Analogique Mise à niveau", note: "", coef: 0.5},
-                            {nom: "Électronique Numérique Mise à niveau", note: "", coef: 0.5},
-                            {nom: "Introduction à l'algorithmique", note: "", coef: 0.25},
-                            {nom: "Introduction à la programmation en C", note: "", coef: 0.25},
-                            {nom: "Introduction aux systèmes d'exploitation - application UNIX", note: "", coef: 0.25},
-                            {nom: "Projet programmation en C", note: "", coef: 0.25},
-                            {nom: "Analyse fonctionnelle", note: "", coef: 0.25},
-                            {nom: "Anglais - S05", note: "", coef: 0.25},
-                            {nom: "Développement durable et responsabilité sociétale", note: "", coef: 0.1},
-                            {nom: "Intégrer l'entreprise", note: "", coef: 0.4},
-                            {nom: "Compétences développées en entreprise lors du", note: "", coef: 1}
-                        ],
-                        ri: [
-                            {nom: "Outils mathématiques et physiques utiles à l'ingénieur R&I", note: "", coef: 0.7},
-                            {nom: "Logique et mathématiques discrètes", note: "", coef: 0.3},
-                            {nom: "Introduction aux réseaux", note: "", coef: 0.4},
-                            {nom: "Architecture TCP/IP", note: "", coef: 0.6},
-                            {nom: "Introduction à l'environnement UNIX", note: "", coef: 0.1},
-                            {nom: "Introduction à l'algorithmique", note: "", coef: 0.3},
-                            {nom: "Introduction à la programmation en C", note: "", coef: 0.3},
-                            {nom: "Langages de script et python", note: "", coef: 0.3},
-                            {nom: "Analyse fonctionnelle", note: "", coef: 0.25},
-                            {nom: "Anglais - S05", note: "", coef: 0.25},
-                            {nom: "Développement durable et responsabilité sociétale", note: "", coef: 0.1},
-                            {nom: "Intégrer l'entreprise", note: "", coef: 0.4},
-                            {nom: "Intégration des connaissances et des compétences - première année", note: "", coef: 0}
-                        ]
+                        info: {
+                            "Algorithmique et mathématiques 1": [
+                                {nom: "Initiation à l'algorithmique", note: "", coef: 2},
+                                {nom: "Structures arborescentes", note: "", coef: 2},
+                                {nom: "Traitement de l'Information", note: "", coef: 1.5},
+                                {nom: "Théorie de l'information", note: "", coef: 1.5},
+                                {nom: "Probabilités et statistiques", note: "", coef: 2.5},
+                                {nom: "Logique et preuve", note: "", coef: 2},
+                            ],
+                            "Programmation et environnement informatique 1": [
+                                {nom: "Environnement de travail", note: "", coef: 3},
+                                {nom: "Structure des ordinateurs", note: "", coef: 3},
+                                {nom: "Programmation impérative 1", note: "", coef: 4},
+                            ],
+                            "Projet de Programmation": [
+                                {nom: "Projet d'algorithmique et de programmation", note: "", coef: 5},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais", note: "", coef: 1.5},
+                                {nom: "LV2", note: "", coef: 1},
+                                {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        telecom: {
+                            "Informatique et Réseaux, niveau 1": [
+                                {nom: "Systèmes d'exploitation", note: "", coef: 4},
+                                {nom: "Algorithmique et structure de données", note: "", coef: 4},
+                                {nom: "Introduction aux réseaux", note: "", coef: 3},
+                                {nom: "Programmation impérative", note: "", coef: 4},
+                            ],
+                            "Mathématiques de l'ingénieur et signal": [
+                                {nom: "Electronique de communications", note: "", coef: 1.5},
+                                {nom: "Signaux continus", note: "", coef: 3.5},
+                                {nom: "Probabilités", note: "", coef: 3.5},
+                                {nom: "Optimisation", note: "", coef: 1.5},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais", note: "", coef: 1.5},
+                                {nom: "LV2", note: "", coef: 1},
+                                {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        matmeca: {
+                            "Mécanique I": [
+                                {nom: "Travaux pratiques de Mécanique", note: "", coef: 2},
+                                {nom: "Mécanique des milieux continus et déformables - Introduction & Fluides", note: "", coef: 2},
+                                {nom: "Mécanique des Systèmes de Solides", note: "", coef: 3},
+                                {nom: "Mécanique des Milieux Continus Déformables - Résistance des Matériaux I", note: "", coef: 2},
+                            ],
+                            "Mathématiques I": [
+                                {nom: "Equations Différentielles", note: "", coef: 2.5},
+                                {nom: "Calcul Différentiel", note: "", coef: 2.5},
+                            ],
+                            "Calcul scientifique I": [
+                                {nom: "Analyse Numérique", note: "", coef: 4.5},
+                                {nom: "Calcul scientifique en Fortran 90  - I", note: "", coef: 4.5},
+                                {nom: "Travail Etude & Recherche - I", note: "", coef: 2},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais", note: "", coef: 1.5},
+                                {nom: "LV2", note: "", coef: 1},
+                                {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        elec: {
+                            "Mathématiques 1/ Physique 1": [
+                                {nom: "Techniques mathématiques pour l'ingénieur 1", note: "", coef: 2.5},
+                                {nom: "Probabilité", note: "", coef: 1.5},
+                                {nom: "Electromagnétisme", note: "", coef: 1.5},
+                                {nom: "Physique pour l'électronique", note: "", coef: 1.5},
+                            ],
+                            "Electronique générale 1": [
+                                {nom: "Electronique générale", note: "", coef: 3},
+                                {nom: "Projet/Travaux pratiques", note: "", coef: 3},
+                                {nom: "Circuits et systèmes I", note: "", coef: 3},
+                            ],
+                            "Electronique numérique/Informatique": [
+                                {nom: "Logique combinatoire et logique séquentielle", note: "", coef: 3},
+                                {nom: "Architecture de base d'un processeurs", note: "", coef: 2},
+                                {nom: "Unix - Langage C", note: "", coef: 4},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais", note: "", coef: 1.5},
+                                {nom: "LV2", note: "", coef: 1},
+                                {nom: "Activité Physique Sportive et Artistique", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 1/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        see: {
+                            "Mathématiques / Physique (Mise à niveau)": [
+                                {nom: "Mathématiques Mise à niveau", note: "", coef: 0.45},
+                                {nom: "Physique pour l'électronique", note: "", coef: 0.2},
+                                {nom: "Physique de la propagation", note: "", coef: 0.2},
+                                {nom: "Probabilités et statistiques", note: "", coef: 0.15},
+                            ],
+                            "Électronique numérique et analogique (mise à niveau)": [
+                                {nom: "Electronique Analogique Mise à niveau", note: "", coef: 0.5},
+                                {nom: "Électronique Numérique Mise à niveau", note: "", coef: 0.5},
+                            ],
+                            "Informatique": [
+                                {nom: "Introduction à l'algorithmique", note: "", coef: 0.25},
+                                {nom: "Introduction à la programmation en C", note: "", coef: 0.25},
+                                {nom: "Introduction aux systèmes d'exploitation - application UNIX", note: "", coef: 0.25},
+                                {nom: "Projet programmation en C", note: "", coef: 0.25},
+                            ],
+                            "Culture de l'entreprise et langue anglaise - S05": [
+                                {nom: "Analyse fonctionnelle", note: "", coef: 0.25},
+                                {nom: "Anglais - S05", note: "", coef: 0.25},
+                                {nom: "Développement durable et responsabilité sociétale", note: "", coef: 0.1},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 0.4},
+                            ],
+                            "Compétences développées en entreprise": [
+                                {nom: "Compétences développées en entreprise lors du", note: "", coef: 1}
+                            ]
+                        },
+                        ri: {
+                            "Sciences de l'ingénieur 1": [
+                                {nom: "Outils mathématiques et physiques utiles à l'ingénieur R&I", note: "", coef: 0.7},
+                                {nom: "Logique et mathématiques discrètes", note: "", coef: 0.3},
+                            ],
+                            "Réseaux": [
+                                {nom: "Introduction aux réseaux", note: "", coef: 0.4},
+                                {nom: "Architecture TCP/IP", note: "", coef: 0.6},
+                            ],
+                            "Informatique 1": [
+                                {nom: "Introduction à l'environnement UNIX", note: "", coef: 0.1},
+                                {nom: "Introduction à l'algorithmique", note: "", coef: 0.3},
+                                {nom: "Introduction à la programmation en C", note: "", coef: 0.3},
+                                {nom: "Langages de script et python", note: "", coef: 0.3},
+                            ],
+                            "Culture de l'entreprise et langue anglaise - S05": [
+                                {nom: "Analyse fonctionnelle", note: "", coef: 0.25},
+                                {nom: "Anglais - S05", note: "", coef: 0.25},
+                                {nom: "Développement durable et responsabilité sociétale", note: "", coef: 0.1},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 0.4},
+                            ]
+                        }
                     },
                     semestre6: {
                     },
@@ -308,10 +357,10 @@
                         localStorage.semestre = this.getSelectedSemestre();
                         if (this.getFiliereApparente() != '') {
                             localStorage.filiere_apparente = this.getFiliereApparente();
-                        };
+                        }
                         if (this.getFiliereUtilisateur() != '') {
                             localStorage.filiere_utilisateur = this.getFiliereUtilisateur();
-                        };
+                        }
                     } else {
                         localStorage.clear();
                     }
@@ -324,24 +373,24 @@
                             this.setFiliereApparente(this.getFiliereUtilisateur())
                         } else if (this.clean(this.getFiliereApparente()) in this.equiv_filieres) {
                             this.setFiliereApparente(this.equiv_filieres[this.clean(this.getFiliereApparente())]);
-                        };
-                    };
+                        }
+                    }
                     localStorage.semestre = newSemestre;
                 },
                 filiere_utilisateur(newFiliere) {
                     if (this.saveDataStatus()) {
                         localStorage.filiere_utilisateur = newFiliere;
-                    };
+                    }
                 },
                 filiere_apparente(newFiliere) {
                     if (newFiliere !== this.getFiliereUtilisateur()) {
                         if (this.equiv_filieres[this.clean(this.getFiliereUtilisateur())] !== newFiliere && this.all_filieres.includes(newFiliere)) {
                             this.setFiliereUtilisateur(newFiliere)
-                        };
-                    };
+                        }
+                    }
                     if (this.saveDataStatus()) {
                         localStorage.filiere_apparente = newFiliere;
-                    };
+                    }
                 }
             },
             mounted () {
@@ -350,23 +399,23 @@
                 }
                 else if (this.filiere_utilisateur === '' && this.all_filieres.includes(this.filiere_apparente)) {
                     this.filiere_utilisateur = this.filiere_apparente
-                };
+                }
                 for (let i = 1; i < 5; i++) {
                     if (localStorage.getItem(`semestre${i}`)) {
                         try {
                             this[`semestre${i}`] = JSON.parse(localStorage.getItem(`semestre${i}`));
                         } catch(e) {
                             localStorage.removeItem(`semestre${i}`);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 if (localStorage.getItem('total')) {
                         try {
                             this.total = JSON.parse(localStorage.getItem('total'));
                         } catch(e) {
                             localStorage.removeItem('total');
-                        };
-                    };
+                        }
+                    }
                 this.init_done = true;
             },
             methods: {
@@ -385,7 +434,7 @@
                 shareClass() {
                     if (!('share' in navigator)) {
                         return 'unsharable';
-                    };
+                    }
                 },
                 semestreNameClean() {
                     return this.semestre_selectionne.toLowerCase().replace(' ', '');
@@ -405,7 +454,7 @@
                         return this.points_sport3;
                     } else if (semestre == 4) {
                         return this.points_sport4;
-                    };
+                    }
                 },
                 getFiliereUtilisateur() {
                     return this.filiere_utilisateur;
@@ -422,7 +471,7 @@
                 saveData() {
                     if (this.save_data) {
                         localStorage.setItem(this.semestreNameClean(), JSON.stringify(this[this.semestreNameClean()]));
-                    };
+                    }
                 },
                 valideInputClass(note) {
                     if (this.valideSaisieNote(note)) {
@@ -435,49 +484,69 @@
                         if (semestre == 'total') {
                             if (this[semestre][cat]['note'] !== '') {
                                 return true;
-                            };
+                            }
                         }
                         else {
                             if (cat == 'filieres') {
                                     continue;
-                            };
+                            }
                             for (e in this[semestre][cat]) {
                                 if ('nom' in this[semestre][cat][e]) {
                                     if (this[semestre][cat][e]['note'] !== '') {
                                         return true;
-                                    };
+                                    }
                                 }
                                 else {
                                     for (se in this[semestre][cat][e]) {
                                         if (this[semestre][cat][e][se]['note'] !== '') {
                                             return true;
-                                        };
-                                    };
-                                };
-                            };
+                                        }
+                                    }
+                                }
+                            }
                         }
-                    };
+                    }
                     return false;
                 },
                 longToShortNameFiliere(semestre_long) {
                     if (semestre_long === "Informatique") {
-                        return "info"
+                        return "info";
                     }
                     if (semestre_long === "Électronique") {
-                        return "elec"
+                        return "elec";
                     }
                     if (semestre_long === "Télécom") {
-                        return "telecom"
+                        return "telecom";
                     }
                     if (semestre_long === "Matmeca") {
-                        return "matmeca"
+                        return "matmeca";
                     }
                     if (semestre_long === "SEE") {
-                        return "see"
+                        return "see";
                     }
                     if (semestre_long === "RI") {
-                        return "ri"
+                        return "ri";
                     }
+                },
+                calculMoyenneUe(matiereList) {
+                    tot_notes = 0;
+                    tot_coef = 0;
+                    for (i in matiereList) {
+                        let matiere = matiereList[i];
+                        if (this.valideNote(matiere.note)) {
+                            tot_notes += matiere.note * matiere.coef;
+                            tot_coef += matiere.coef;
+                        }
+                    }
+                    moyenne = tot_notes / tot_coef;
+                    if (isNaN(moyenne)) {
+                        return " - ";
+                    }
+                    moyenne = Math.round((moyenne)*100)/100;
+                    if (moyenne > 20) {
+                        moyenne = 20;
+                    }
+                    return moyenne;
                 },
                 calculMoyenne() {
                     if (this.init_done) {
@@ -485,28 +554,30 @@
                             this.saveData();
                         } else {
                             localStorage.removeItem(this.semestreNameClean());
-                        };
-                    };
+                        }
+                    }
                     tot_notes = 0;
                     tot_coef = 0;
                     if (this.semestre_selectionne === 'Semestre 5') {
-                        for (i in this.semestre5[this.longToShortNameFiliere(this.semestre_selectionne)]) {
-                            let matiere = this.semestre5[this.longToShortNameFiliere(this.semestre_selectionne)][i];
-                            if (this.valideNote(matiere.note)) {
-                                tot_notes += matiere.note * matiere.coef;
-                                tot_coef += matiere.coef;
-                            };
-                        };
+                        for (ue in this.semestre5[this.longToShortNameFiliere(this.filiere_apparente)]) {
+                            for (i in this.semestre5[this.longToShortNameFiliere(this.filiere_apparente)][ue]) {
+                                let matiere = this.semestre5[this.longToShortNameFiliere(this.filiere_apparente)][ue][i];
+                                if (this.valideNote(matiere.note)) {
+                                    tot_notes += matiere.note * matiere.coef;
+                                    tot_coef += matiere.coef;
+                                }
+                            }
+                        }
                     }
                     moyenne = tot_notes / tot_coef;
                     this.moyenne = moyenne;
                     if (isNaN(moyenne)) {
                         return " - ";
-                    };
+                    }
                     moyenne = Math.round((moyenne)*100)/100;
                     if (moyenne > 20) {
                         moyenne = 20;
-                    };
+                    }
                     this.saveData()
                     return moyenne;
                 },
@@ -516,24 +587,24 @@
                             this.saveData();
                         } else {
                             localStorage.removeItem('total');
-                        };
-                    };
+                        }
+                    }
                     let somme_notes = 0
                     let somme_coefs = 0
                     for (i in this.total) {
                         if (this.valideNote(this.total[i].note) && (!annee || this.total[i].nom.endsWith(annee*2) || this.total[i].nom.endsWith(annee*2-1))) {
                             somme_notes += this.total[i].note
                             somme_coefs += 1
-                        };
-                    };
+                        }
+                    }
                     let moyenne = somme_notes / somme_coefs
                     if (isNaN(moyenne)) {
                         return " - ";
-                    };
+                    }
                     moyenne = Math.round((moyenne)*100)/100;
                     if (moyenne > 20) {
                         moyenne = 20;
-                    };
+                    }
                     return moyenne
                 },
                 clean(string) {
@@ -542,67 +613,67 @@
                 emoji(note) {
                     if (note === '') {
                         return '';
-                    };
+                    }
                     if (note < 0.5) {
                         return '🥶';
-                    };
+                    }
                     if (note <= 1.8) {
                         return '🙈';
-                    };
+                    }
                     if (note <= 2.3) {
                         return '😶‍🌫️';
-                    };
+                    }
                     if (note <= 3.5) {
                         return '🫠';
-                    };
+                    }
                     if (note <= 5) {
                         return '🥲';
-                    };
+                    }
                     if (note <= 6.5) {
                         return '😟';
-                    };
+                    }
                     if (note < 8) {
                         return '☹️';
-                    };
+                    }
                     if (note < 9.5) {
                         return '🙁';
-                    };
+                    }
                     if (note < 9.95) {
                         return '😐';
-                    };
+                    }
                     if (note <= 10) {
                         return '👀';
-                    };
+                    }
                     if (note < 11) {
                         return '🙂';
-                    };
+                    }
                     if (note <= 12.5) {
                         return '😃';
-                    };
+                    }
                     if (note <= 13.8) {
                         return '😁';
-                    };
+                    }
                     if (note <= 14.4) {
                         return '🤩';
-                    };
+                    }
                     if (note <= 15.5) {
                         return '🥳';
-                    };
+                    }
                     if (note <= 16.5) {
                         return '🤪';
-                    };
+                    }
                     if (note <= 18) {
                         return '🥵';
-                    };
+                    }
                     if (note <= 19.5) {
                         return '🤯';
-                    };
+                    }
                     if (note < 19.99) {
                         return '🐐';
-                    };
+                    }
                     if (note <= 20) {
                         return '🗿🍷';
-                    };
+                    }
                     return '';
                 },
                 shareMoyenne() {
@@ -613,10 +684,10 @@
                     let shareData = {
                         title: 'Moyenne CPBx',
                         url: window.location.origin
-                    };
+                    }
                     if (moyenne != '' && moyenne != ' - ' && moyenne != '-') {
                         shareData.text = `J'ai ${moyenne} de moyenne générale au ${this.semestre_selectionne.toLowerCase()}\nToi aussi calcule ta moyenne sur ce site`;
-                    };
+                    }
                     navigator.share(shareData);
                 }
             }
@@ -627,7 +698,7 @@
         window.addEventListener('load', () => {
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/serviceWorker.js');
-            };
+            }
         });
     </script> -->
 </body>
