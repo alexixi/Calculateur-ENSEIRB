@@ -1,14 +1,14 @@
 body {
     margin: 0;
-    background-color: #eef1ff;
+    background-color: #fff8e0;
     color: black;
     font-size: 2rem;
 }
 
 #page {
     border-radius: 40px;
-    background-color: #2980b9;
-    width: 40rem;
+    background-color: #d9b534;
+    width: 70rem;
     max-width: 80%;
     margin-top: 2vh;
     margin-left: auto;
