@@ -1,5 +1,5 @@
-const VERSION = 25;
-const CACHE_NAME = 'cpbx-calculateur-cache-v' + VERSION;
+const VERSION = 0;
+const CACHE_NAME = 'enseirb-calculateur-cache-v' + VERSION;
 const urlsToCache = [
     '/',
     '/styles/style.css',
