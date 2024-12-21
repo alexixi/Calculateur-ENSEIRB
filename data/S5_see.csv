@@ -1,0 +1,29 @@
+Père;Nature_Père;EP;Nature_EP;Intitulé;Nbre_Choix;ECTS;ECTS_CALCULE;Coefficient;;;;Volume CM;Volume CI;Volume TD;Volume TDM;Volume TP;Volume TPT;Volume TI;Volume PRJ;Responsables;Intervenants;Langue cours;Langue support;EP_POINTE;Thematique
+IAEEE3;AN;ESS5;SEMESTRE;SEMESTRE 5 - SYSTÈMES ELECTRONIQUES EMBARQUÉS;;;30;;;;;0;0;0;0;0;0;0;0;Camille Leroux;;Français;Français;ESS5;
+ESS5;SEMESTRE;ES5A;UE;UE SEE5-A - Mathématiques / Physique (Mise à niveau);;4;4;;;;;0;0;0;0;0;0;0;0;Patrice Tesson;;Français;Français;ES5A;
+ES5A;UE;ES5MA100;MODULE;Mathématiques (Mise à niveau);;;;0,45;;;;0;48;0;0;0;0;0;0;Patrice Tesson;Patrice Tesson:tesson;Français;Français;ES5MA100;
+ES5A;UE;ES5PH112;MODULE;Physique pour l'électronique;;;;0,2;;;;0;20;0;0;0;0;0;0;Marina Deng;Marina Deng:mdeng001,Sophie Fasquel-perrin:;Français;Français;ES5PH112;"Cet enseignement est une introduction à la Physique des semi-conducteurs. Les notions abordées sont :
+
+Définition d’un matériau semi-conducteur
+Diagramme des bandes d’énergie électrique
+Semi-conducteurs intrinsèques et extrinsèques (dopage N, P)
+Mécanismes de transport de charge (conduction et diffusion)
+Jonction PN à l’équilibre thermodynamique
+"
+ES5A;UE;ES5PH113;MODULE;Physique de la propagation;;;;0,2;;;;0;20;0;0;0;0;0;0;Patrice Tesson;Patrice Tesson:tesson;Français;Français;ES5PH113;
+ES5A;UE;ES5MA120;MODULE;Probabilités et statistiques;;;;0,15;;;;12;0;0;0;0;0;0;0;Patrice Tesson;Patrice Tesson:tesson;Français;Français;ES5MA120;
+ESS5;SEMESTRE;ES5B;UE;UE SEE5-B - Électronique numérique et analogique (mise à niveau);;4;4;;;;;0;0;0;0;0;0;0;0;François Rivet;;Français;Français;ES5B;
+ES5B;UE;ES5EA100;MODULE;Electronique Analogique (Mise à niveau);;;;0,5;;;;0;40;0;0;0;0;0;0;François Rivet;François Rivet:frivet;Français;Français;ES5EA100;
+ES5B;UE;ES5EN110;MODULE;Électronique Numérique (Mise à niveau);;;;0,5;;;;0;48;0;0;0;0;0;0;Benjamin Quertier;Théo Chicard:tchicard,Benjamin Quertier-dagorn:;Français;Français;ES5EN110;
+ESS5;SEMESTRE;ES5C;UE;UE SEE5-C - Informatique;;4;4;;;;;0;0;0;0;0;0;0;0;Floréal Morandat;;Français;Français;ES5C;
+ES5C;UE;ES5IF121;MODULE;Introduction à l'algorithmique;;;;0,25;;;;0;20;0;0;0;0;0;0;Yves Métivier;Sylvain Lombardy:slombardy;Français;Français;ES5IF121;
+ES5C;UE;ES5IF122;MODULE;Introduction à la programmation en C;;;;0,25;;;;0;24;0;0;0;0;0;0;Floréal Morandat;Floréal Morandat:fmorandat;Français;Français;ES5IF122;Programmation
+ES5C;UE;ES5IF123;MODULE;Introduction aux systèmes d'exploitation - application UNIX;;;;0,25;;;;0;12;0;0;0;0;0;0;Guillaume Delbergue;Guillaume Delbergue:gdelbergue;Français;Français;ES5IF123;UNIX
+ES5C;UE;ES5IF125;MODULE;Projet programmation en C;;;;0,25;;;;0;16;0;0;0;0;0;0;Floréal Morandat;Floréal Morandat:fmorandat;Français;Français;ES5IF125;
+ESS5;SEMESTRE;ES5D;UE;UE SEE5-D -  Culture de l'entreprise et langue anglaise - S05;;5;5;;;;;0;0;0;0;0;0;0;0;Emilie Paillard,Éric Astien;;Français;Français;ES5D;
+ES5D;UE;EA5CE147;MODULE;Analyse fonctionnelle;;;;0,25;;;;0;24;0;0;0;0;0;0;Patrick Pujol;Patrick Pujol:ppujol;Français;Français;EA5CE147;Gestion de projet, cahier des charges fonctionnelles
+ES5D;UE;EA5LC114;MODULE;Anglais - S05;;;;0,25;;;;0;0;30;0;0;0;0;0;Emilie Paillard;;Anglais;Anglais;EA5LC114;
+ES5D;UE;EA5CE164;MODULE;Développement durable et responsabilité sociétale;;;;0,1;;;;5;0;3;0;0;0;0;0;Annabelle Collin,Armande Capitaine,Christophe Jego;Annabelle Collin:acollin001,Mathieu Coquerelle:mcoquerelle;Français;Français;EA5CE164;Entreprise - Environnement - société
+ES5D;UE;EA5CE167;MODULE;Intégrer l'entreprise;;;;0,4;;;;38;0;0;0;0;0;0;0;Philippe Moreaud,Hugues Nicolas,Eric Astien;Philippe Moreaud:pmoreaud001,Hugues Nicolas:hnicolas004;Français;Français;EA5CE167;Ce module de première année est de culture générale et d'entreprise. Il porte sur l'économie générale, le management et le droit
+ESS5;SEMESTRE;ES5E;UE;UE SEE5-E - Compétences développées en entreprise;;13;13;;;;;0;0;0;0;0;0;0;0;Dominique Dallet;;Français;Français;ES5E;Culture de l'entreprise
+ES5E;UE;ES5CE111;MODULE;Compétences développées en entreprise lors du S5;;;;1;;;;0;0;0;0;0;0;0;0;Mathieu Chevrie;;Français;Français;ES5CE111;Culture de l'entreprise

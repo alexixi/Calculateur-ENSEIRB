@@ -1,0 +1,49 @@
+Père;Nature_Père;EP;Nature_EP;Intitulé;Nbre_Choix;ECTS;ECTS_CALCULE;Coefficient;;;;Volume CM;Volume CI;Volume TD;Volume TDM;Volume TP;Volume TPT;Volume TI;Volume PRJ;Responsables;Intervenants;Langue cours;Langue support;EP_POINTE;Thematique
+IAERS3;AN;ERS5;SEMESTRE;SEMESTRE 5 -  Réseaux et Informatique;;;30;;;;;0;0;0;0;0;0;0;0;Antoine Rollet;;Français;Français;ERS5;
+ERS5;SEMESTRE;ER5A;UE;UE RSI5-A - Sciences de l'ingénieur 1;;4;4;;;;;0;0;0;0;0;0;0;0;Jean Augereau;;Français;Français;ER5A;
+ER5A;UE;ER5MA121;MODULE;Outils mathématiques et physiques utiles à l'ingénieur R&I;;;;0,7;;;;0;60;0;0;0;0;0;0;Jean Augereau;Jean Augereau:jaugerea;Français;Français;ER5MA121;"Complexe
+
+Coordonnées cartésiennes
+Coordonnées polaires, utilisation en  physique
+Formules de Moivre et d'Euler
+Trigonométrique hyperbolique
+
+Fonction d’une variable réelle
+
+Définition d’une fonction, Domaine de définition
+Limites, Continuités, Dérivées, Développements en série, développements limités, règle de L’Hospital
+Tableau de variations
+Graphe
+Éventuelle fonction réciproque, fonctions injectives, puis bijective.
+Fonctions les plus courantes
+
+Calcul intégral
+
+Intégrale de Riemann
+Méthodes de calcul : Primitives immédiates, Décomposition en sommes, linéarisation, fonctions composées, Intégration par parties, Changement de variable bijectif
+Primitives des fractions rationnelles
+Équations linéaires différentielles du premier degré
+
+Complexe"
+ER5A;UE;ER5MA122;MODULE;Logique et mathématiques discrètes;;;;0,3;;;;0;20;0;0;0;0;0;0;Frederic Herbreteau;Frédéric Herbreteau:herbrete,Sylvain Lombardy:slombardy;Français;Français;ER5MA122;"
+logique propositionnelle
+arithmétique : pgcd, algorithme d’Euclide, anneau cyclique, lemme chinois
+définition inductive d'ensembles : entiers, arbres, ...
+techniques de preuves : contraposée, preuve par l’absurde, preuve par récurrence
+algèbre linéaire : produit de matrices, pivot de Gauss, résolution d'équations linéaires
+"
+ERS5;SEMESTRE;ER5B;UE;UE RSI5-B - Réseaux;;4;4;;;;;0;0;0;0;0;0;0;0;Xavier Delord;;Français;Français;ER5B;
+ER5B;UE;ER5RE112;MODULE;Introduction aux réseaux;;;;0,4;;;;0;24;0;0;0;0;0;0;Nicolas Marie-Magdelaine;Nicolas Marie-magdelaine:nmariemagdel;Français;Français;ER5RE112;Réseaux
+ER5B;UE;ER5RE108;MODULE;Architecture TCP/IP;;;;0,6;;;;0;44;0;0;4;0;0;0;Xavier Delord;Xavier Delord:delord,Nicolas Marie-magdelaine:nmariemagdel,Antoine Rollet:rollet;Français;Français;ER5RE108;Réseaux
+ERS5;SEMESTRE;ER5C;UE;UE RSI5-C - Informatique 1;;5;5;;;;;0;0;0;0;0;0;0;0;Michael Clement;;Français;Français;ER5C;
+ER5C;UE;ER5IT106;MODULE;Introduction à l'environnement UNIX;;;;0,1;;;;0;22;0;0;0;0;0;0;Antoine Rollet;Antoine Rollet:rollet;Français;Français;ER5IT106;
+ER5C;UE;ER5IF119;MODULE;Introduction à l'algorithmique;;;;0,3;;;;0;28;0;0;0;0;0;0;Frederic Chatrie;Theo De Castro Pinto:tdcpinto,Sylvain Lombardy:slombardy;Français;Français;ER5IF119;
+ER5C;UE;ER5IF120;MODULE;Introduction à la programmation en C;;;;0,3;;;;0;30;0;0;0;0;0;0;Michael Clement;Michaël Clement:mclement007,Manuel Ricardo Guevara Garban:mguevaragar;Français;Français;ER5IF120;Programmation
+ER5C;UE;ER5PG121;MODULE;Langages de script et python;;;;0,3;;;;0;16;0;0;0;0;0;0;Loic Pauleve;Loïc Pauleve:lpauleve;Français;Français;ER5PG121;Le module est une initiation aux langages de programmation de script : shell, python
+ERS5;SEMESTRE;ER5D;UE;UE RSI5-D -  Culture de l'entreprise et langue anglaise - S05;;5;5;;;;;0;0;0;0;0;0;0;0;Éric Astien,Claudia Brosnahan Couturier;;Français;Français;ES5D;
+ER5D;UE;EA5CE147;MODULE;Analyse fonctionnelle;;;;0,25;;;;0;24;0;0;0;0;0;0;Patrick Pujol;Patrick Pujol:ppujol;Français;Français;EA5CE147;Gestion de projet, cahier des charges fonctionnelles
+ER5D;UE;EA5LC114;MODULE;Anglais - S05;;;;0,25;;;;0;0;30;0;0;0;0;0;Emilie Paillard;;Anglais;Anglais;EA5LC114;
+ER5D;UE;EA5CE164;MODULE;Développement durable et responsabilité sociétale;;;;0,1;;;;5;0;3;0;0;0;0;0;Annabelle Collin,Armande Capitaine,Christophe Jego;Annabelle Collin:acollin001,Mathieu Coquerelle:mcoquerelle;Français;Français;EA5CE164;Entreprise - Environnement - société
+ER5D;UE;EA5CE167;MODULE;Intégrer l'entreprise;;;;0,4;;;;38;0;0;0;0;0;0;0;Philippe Moreaud,Hugues Nicolas,Eric Astien;Philippe Moreaud:pmoreaud001,Hugues Nicolas:hnicolas004;Français;Français;EA5CE167;Ce module de première année est de culture générale et d'entreprise. Il porte sur l'économie générale, le management et le droit
+ERS5;SEMESTRE;ER5E;UE;UE RSI5-E - Compétences développées en entreprise;;12;12;;;;;0;0;0;0;0;0;0;0;Sylvain Lombardy;;Français;Français;ER5E;
+ER5E;UE;ER5CE170;MODULE;Intégration des connaissances et des compétences - première année;;;;;;;;0;0;0;0;0;0;0;0;Mathieu Chevrie;;Français;Français;ER5CE170;
