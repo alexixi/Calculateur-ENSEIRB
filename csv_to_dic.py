@@ -1,16 +1,18 @@
 res = ""
-for semestre in range(5, 11):
-    res += f"semestre{semestre}:" + " {\n"
-    for filiere in ['info', 'telecom', 'matmeca', 'elec', 'see', 'ri']:
+delimiteur = ','
+filieres = {'info': 'Informatique', 'telecom': 'Télécom', 'matmeca': 'Matmeca', 'elec': 'Électronique', 'see': 'SEE', 'ri': 'RI'}
+for semestre in range(6, 7):
+    res += f'"Semestre {semestre}" :' + " {\n"
+    for filiere in filieres.keys():
         try:
             with open(f"./data/S{semestre}_{filiere}.csv", 'r', encoding='utf8') as file:
                 lines = file.read().split('\n')
         except FileNotFoundError:
             print(f"{semestre} {filiere} non trouvé")
         else:
-            res += f"    {filiere}: " + '{'
+            res += f'    "{filieres[filiere]}": ' + '{'
             for i, l in enumerate(lines):
-                arg = l.split(';')
+                arg = l.split(delimiteur)
                 if len(arg) < 8:
                     continue
                 if arg[3] == "UE":
@@ -31,4 +33,7 @@ for semestre in range(5, 11):
     res = res[:-2]
     res += '\n},\n'
 res = res[:-1]
-print(res)
+
+
+with open('result_dict.js', 'w', encoding='utf8') as file:
+    file.write(res)
