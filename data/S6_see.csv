@@ -1,0 +1,27 @@
+Père,Nature_Père,EP,Nature_EP,Intitulé,Nbre_Choix,ECTS,ECTS_CALCULE,Coefficient,,,,Volume CM,Volume CI,Volume TD,Volume TDM,Volume TP,Volume TPT,Volume TI,Volume PRJ,Responsables,Intervenants,Langue cours,Langue support,EP_POINTE,Thematique
+IAEEE3,AN,ESS6,SEMESTRE,SEMESTRE 6 - SYSTÈMES ELECTRONIQUES EMBARQUÉS,,,30,,,,,0,0,0,0,0,0,0,0,Camille Leroux,,Français,Français,ESS6,
+ESS6,SEMESTRE,ES6A,UE,UE SEE6-A - Conception Électronique,,4,4,,,,,0,0,0,0,0,0,0,0,Camille Leroux,,Français,Français,ES6A,
+ES6A,UE,ES6AU101,MODULE,Systèmes Linéaires,,,,0.25,,,,0,16,0,0,0,0,0,0,Pierre Melchior,Pierre Melchior:melchior,Français,Français,ES6AU101,
+ES6A,UE,ES6EA111,MODULE,Fonctions analogiques,,,,0.4,,,,0,36,0,0,0,0,0,0,Herve Lapuyade,"Herve Lapuyade:hlapuyad,Frederic Verdier:",Français,Français,ES6EA111,
+ES6A,UE,ES6EN112,MODULE,Conception numérique,,,,0.35,,,,0,32,0,0,0,0,0,0,Camille Leroux,Dominique Dallet:dallet,Français,Français,ES6EN112,
+ESS6,SEMESTRE,ES6B,UE,UE SEE6-B - Outils Informatiques,,3,3,,,,,0,0,0,0,0,0,0,0,Floréal Morandat,,Français,Français,ES6B,
+ES6B,UE,ES6MI100,MODULE,Architecture des micro-contrôleurs,,,,0.4,,,,0,28,0,0,0,0,0,0,Mathieu Escouteloup,Mathieu Escouteloup:mescoutelou,Français,Français/Anglais,ES6MI100,Systèmes à base de microcontrôleur dans l'objectif de contrôler un ensemble de capteurs et actionneurs sur un système embarqué
+ES6B,UE,ES6MI105,MODULE,Projet micro-contrôleur en langage C,,,,0.25,,,,0,16,0,0,0,0,0,0,Mathieu Escouteloup,"Mathieu Escouteloup:mescoutelou,Jonathan Saussereau:jsaussereau",Français,Français,ES6MI105,exercer les étudiants sur un cas de réalisation concret
+ES6B,UE,ES6IF126,MODULE,Langage C pour l'électronique,,,,0.35,,,,0,24,0,0,0,0,0,0,Floréal Morandat,Floréal Morandat:fmorandat,Français,Français,ES6IF126,
+ESS6,SEMESTRE,ES6C,UE,UE SEE6-C - Technologies de fabrication,,2,2,,,,,0,0,0,0,0,0,0,0,Corinne Dejous,,Français,Français,ES6C,
+ES6C,UE,ES6ME100,MODULE,Technologies imprimées,,,,0.35,,,,0,16,0,0,0,0,0,0,Stephane Gauffre,"Stéphane * Gauffre *:,Jean-luc Lachaud:jlachaud",Français,Français,ES6ME100,
+ES6C,UE,ES6ME101,MODULE,Technologies nano et micro-électroniques,,,,0.35,,,,0,24,0,0,0,0,0,0,Corinne Dejous,"Helene Debeda-hickel:,Corinne Dejous:dejous,Isabelle Favre:favre,Jean-luc Lachaud:jlachaud,Bernard Plano:plano",Français,Français,ES6ME101,
+ES6C,UE,ES6ME102,MODULE,Capteurs pour l'embarqué,,,,0.3,,,,0,12,0,0,0,0,0,0,Corinne Dejous,Corinne Dejous:dejous,Français,Français,ES6ME102,
+ESS6,SEMESTRE,ES6D,UE,UE SEE6-D - Outils mathématiques,,4,4,,,,,0,0,0,0,0,0,0,0,Yannick Berthoumieu,,Français,Français,ES6D,
+ES6D,UE,ES6MA106,MODULE,Mathématiques pour l'ingénieur,,,,0.2,,,,0,20,0,0,0,0,0,0,Patrice Tesson,Patrice Tesson:tesson,Français,Français,ES6MA106,
+ES6D,UE,ES6TS110,MODULE,Traitement numérique du signal,,,,0.3,,,,0,36,0,0,0,0,0,0,Yannick Berthoumieu,"Yannick Berthoumieu:berthoum,Thomas LorblanchÈs:tlorblanche",Français,Français,ES6TS110,
+ES6D,UE,ES6TS111,MODULE,Communications Numériques,,,,0.3,,,,0,36,0,0,0,0,0,0,Guillaume Ferré,Guillaume FerrÉ:ferre,Français,Français,ES6TS111,
+ES6D,UE,ES6TS118,MODULE,Communications analogiques,,,,0.2,,,,0,16,0,0,0,0,0,0,Dominique Dallet,Dominique Dallet:dallet,Français,Français,ES6TS118,
+ESS6,SEMESTRE,ES6E,UE,UE SEE6-E - Culture de l'entreprise et langue anglaise - S06,,4,4,,,,,0,0,0,0,0,0,0,0,"Emilie Paillard,Éric Astien",,Français,Français,ES6E,
+ES6E,UE,EA6LC115,MODULE,Anglais - S06,,,,0.3,,,,0,0,30,0,0,0,0,0,Emilie Paillard,,Anglais,Anglais,EA6LC115,
+ES6E,UE,EA6CE170,MODULE,Performance en entreprise,,,,0.35,,,,19,0,6,0,0,0,0,0,Eric Astien,"Éric Astien:astien,Patrick Pujol:ppujol",Français,Français,EA6CE170,Cette thématique est essentiellement accès sur la gestion de projet.
+ES6E,UE,EA6CE171,MODULE,Relations en l'entreprise,,,,0.35,,,,28,0,0,0,0,0,0,0,"Emmanuelle Serres,Eric Astien,Regine Danet","Hugues Nicolas:hnicolas004,Emmanuelle Serres:eserres001",Français,Français,EA6CE171,"1. Permettre au futur ingénieur de sélectionner, animer et pérenniser les ressources humaines nécessaires à son activité
+2. Communication - Ressources Humaines - Management"
+ESS6,SEMESTRE,ES6F,UE,UE SEE6-F - Compétences acquises en entreprise et rapport technique,,13,13,,,,,0,0,0,0,0,0,0,0,Mathieu Chevrie,,Français,Français,ES6F,
+ES6F,UE,ES6CE134,MODULE,Intégration des connaissances et des compétences - 1ère année,,,,0.5,,,,0,0,0,0,0,0,0,0,Mathieu Chevrie,,Français,Français,ES6CE134,
+ES6F,UE,ES6PR109,MODULE,Rapport technique,,,,0.5,,,,0,0,0,0,0,0,12,0,Mathieu Chevrie,,Français,Français,ES6PR109,

@@ -39,11 +39,11 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="application-name" content="Moyenne ENSEIRB">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#d9b534">
+    <meta name="theme-color" content="#f3c420">
     <!-- PWA ios support -->
     <meta name="apple-mobile-web-app-title" content="Moyenne ENSEIRB">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#d9b534">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f3c420">
     <link rel="apple-touch-icon" sizes="16x16" type="image/png" href="/images/ios/16.png"/>
     <link rel="apple-touch-icon" sizes="20x20" type="image/png" href="/images/ios/20.png"/>
     <link rel="apple-touch-icon" sizes="29x29" type="image/png" href="/images/ios/29.png"/>
@@ -120,7 +120,7 @@
                 <option v-for=" filiere in getFilieres() ">{{ filiere }}</option>
             </select>
         </div>
-        <div v-if="semestre_selectionne === 'Semestre 5'" class="matieres-conteiner">
+        <div class="matieres-conteiner">
             <div class="ue" v-for=" (matiereList, ueName) in semData()[this.filiere_apparente] " :key="ueName" >
                 <h3> {{ ueName }} : <strong>{{ calculMoyenneUe(matiereList) }}</strong> <span id="emoji">{{ emoji(calculMoyenneUe(matiereList)) }}</span></h3>
                 <div class="matiere" v-for=" matiere in matiereList " >
@@ -339,7 +339,167 @@
                             ]
                         }
                     },
-                    "Semestre 6": {
+                    "Semestre 6" : {
+                        "Informatique": {
+                            "Algorithmique et mathématiques 2": [
+                                {nom: "Algorithmique de graphes", note: "", coef: 3},
+                                {nom: "Automates finis et applications", note: "", coef: 2},
+                                {nom: "Algorithmique numérique", note: "", coef: 3},
+                                {nom: "Recherche Opérationnelle", note: "", coef: 2},
+                            ],
+                            "Programmation et environnement informatique 2": [
+                                {nom: "Programmation fonctionnelle", note: "", coef: 3},
+                                {nom: "Programmation impérative 2 et développement logiciel", note: "", coef: 3},
+                                {nom: "Atelier Algorithme et Programmation", note: "", coef: 2},
+                                {nom: "Introduction aux réseaux", note: "", coef: 2},
+                            ],
+                            "Projets 2": [
+                                {nom: "Projet de programmation impérative", note: "", coef: 2.5},
+                                {nom: "Projet de programmation fonctionnelle", note: "", coef: 2.5},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais S6", note: "", coef: 1.5},
+                                {nom: "LV2  S6", note: "", coef: 1},
+                                {nom: "Activités Physiques Sportives et artistiques (S6)", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 2/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        "Télécom": {
+                            "Informatique et Réseaux": [
+                                {nom: "Programmation Web", note: "", coef: 2.5},
+                                {nom: "Projet programmation", note: "", coef: 2.5},
+                                {nom: "Les Réseaux Internet", note: "", coef: 5},
+                            ],
+                            "Signal et communications": [
+                                {nom: "Processus et signaux aléatoires", note: "", coef: 4},
+                                {nom: "Communications numériques", note: "", coef: 4},
+                                {nom: "Traitement numérique du signal", note: "", coef: 4},
+                                {nom: "Théorie de l'information", note: "", coef: 3},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais S6", note: "", coef: 1.5},
+                                {nom: "LV2  S6", note: "", coef: 1},
+                                {nom: "Activités Physiques Sportives et artistiques (S6)", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 2/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        "Matmeca": {
+                            "Mécanique II": [
+                                {nom: "Travaux pratiques de Mécanique S6", note: "", coef: 2},
+                                {nom: "Mécanique des Milieux Continus et Déformables - Fluides - II", note: "", coef: 2.5},
+                                {nom: "Dynamique des Structures Mécaniques", note: "", coef: 2.5},
+                                {nom: "Mécanique des Milieux Continus Déformables - Résistance des Matériaux - II", note: "", coef: 2},
+                            ],
+                            "Mathématiques II": [
+                                {nom: "Intégration", note: "", coef: 3},
+                                {nom: "Probabilité", note: "", coef: 3},
+                            ],
+                            "Calcul scientifique II": [
+                                {nom: "Outils Numériques pour la Mécanique", note: "", coef: 5},
+                                {nom: "Travail d'Etude et de Recherche", note: "", coef: 3},
+                                {nom: "Calcul Scientifique en Fortran 90 - II", note: "", coef: 2},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais S6", note: "", coef: 1.5},
+                                {nom: "LV2  S6", note: "", coef: 1},
+                                {nom: "Activités Physiques Sportives et artistiques (S6)", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 2/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        "Électronique": {
+                            "Mathématiques": [
+                                {nom: "Automatique 1 : Modélisation et Commande des Systèmes Dynamiques Continus", note: "", coef: 1.5},
+                                {nom: "TP d'Automatique", note: "", coef: 1.5},
+                                {nom: "Techniques mathématiques pour l'ingénieur 2", note: "", coef: 3},
+                                {nom: "Traitement du signal continu", note: "", coef: 2},
+                            ],
+                            "Electronique 2": [
+                                {nom: "Interconnexions et intégrité des signaux", note: "", coef: 1.5},
+                                {nom: "Projet d'électronique analogique", note: "", coef: 3.5},
+                                {nom: "Introduction à l'Electronique Intégrée", note: "", coef: 3},
+                            ],
+                            "Numérique/Informatique": [
+                                {nom: "Projet Numérique", note: "", coef: 1},
+                                {nom: "Projet micro-processeur", note: "", coef: 1.5},
+                                {nom: "Projet d'informatique (C)", note: "", coef: 1.5},
+                            ],
+                            "Energie et instrumentation": [
+                                {nom: "Introduction à la gestion de l'énergie", note: "", coef: 2},
+                                {nom: "Mesures", note: "", coef: 1},
+                                {nom: "TP Instrumentation et mesures", note: "", coef: 2},
+                            ],
+                            "Langues et culture de l'ingénieur": [
+                                {nom: "LV1 Anglais S6", note: "", coef: 1.5},
+                                {nom: "LV2  S6", note: "", coef: 1},
+                                {nom: "Activités Physiques Sportives et artistiques (S6)", note: "", coef: 1},
+                                {nom: "Développement durable et responsabilité sociétale : Partie 2/2", note: "", coef: 0.5},
+                                {nom: "Intégrer l'entreprise", note: "", coef: 1}
+                            ]
+                        },
+                        "SEE": {
+                            "Conception Électronique": [
+                                {nom: "Systèmes Linéaires", note: "", coef: 0.25},
+                                {nom: "Fonctions analogiques", note: "", coef: 0.4},
+                                {nom: "Conception numérique", note: "", coef: 0.35},
+                            ],
+                            "Outils Informatiques": [
+                                {nom: "Architecture des micro-contrôleurs", note: "", coef: 0.4},
+                                {nom: "Projet micro-contrôleur en langage C", note: "", coef: 0.25},
+                                {nom: "Langage C pour l'électronique", note: "", coef: 0.35},
+                            ],
+                            "Technologies de fabrication": [
+                                {nom: "Technologies imprimées", note: "", coef: 0.35},
+                                {nom: "Technologies nano et micro-électroniques", note: "", coef: 0.35},
+                                {nom: "Capteurs pour l'embarqué", note: "", coef: 0.3},
+                            ],
+                            "Outils mathématiques": [
+                                {nom: "Mathématiques pour l'ingénieur", note: "", coef: 0.2},
+                                {nom: "Traitement numérique du signal", note: "", coef: 0.3},
+                                {nom: "Communications Numériques", note: "", coef: 0.3},
+                                {nom: "Communications analogiques", note: "", coef: 0.2},
+                            ],
+                            "Culture de l'entreprise et langue anglaise - S06": [
+                                {nom: "Anglais - S06", note: "", coef: 0.3},
+                                {nom: "Performance en entreprise", note: "", coef: 0.35},
+                                {nom: "Relations en l'entreprise", note: "", coef: 0.35},
+                            ],
+                            "Compétences acquises en entreprise et rapport technique": [
+                                {nom: "Intégration des connaissances et des compétences - 1ère année", note: "", coef: 0.5},
+                                {nom: "Rapport technique", note: "", coef: 0.5}
+                            ]
+                        },
+                        "RI": {
+                            "Sciences de l'ingénieur 2": [
+                                {nom: "Probabilités et statistiques", note: "", coef: 0.3},
+                                {nom: "Mathématiques de l'ingénieur", note: "", coef: 0.4},
+                                {nom: "Physique des technologies de l'information", note: "", coef: 0.3},
+                            ],
+                            "Internet et Réseaux": [
+                                {nom: "Bases de données", note: "", coef: 0.25},
+                                {nom: "Projet bases de données et internet", note: "", coef: 0.25},
+                                {nom: "HTML et javascript", note: "", coef: 0.25},
+                                {nom: "Architecture TCP/IP 2", note: "", coef: 0.25},
+                            ],
+                            "Informatique 2": [
+                                {nom: "Architecture des ordinateurs", note: "", coef: 0.25},
+                                {nom: "Projet algorithmique et programmation en C", note: "", coef: 0.2},
+                                {nom: "Outils pour la progammation C", note: "", coef: 0.15},
+                                {nom: "Analyse du cycle de vie", note: "", coef: 0.15},
+                                {nom: "Algorithmique des graphes", note: "", coef: 0.25},
+                            ],
+                            "Culture de l'entreprise et langue anglaise - S06": [
+                                {nom: "Anglais - S06", note: "", coef: 0.3},
+                                {nom: "Performance en entreprise", note: "", coef: 0.35},
+                                {nom: "Relations en l'entreprise", note: "", coef: 0.35},
+                            ],
+                            "Compétences développées en entreprise - première année": [
+                                {nom: "Rapport technique", note: "", coef: 0},
+                                {nom: "Intégration des connaissances et des compétences - première année", note: "", coef: 0}
+                            ]
+                        }
                     },
                     "Semestre 7": {
                     },
@@ -400,10 +560,10 @@
                 else if (this.filiere_utilisateur === '' && this.all_filieres.includes(this.filiere_apparente)) {
                     this.filiere_utilisateur = this.filiere_apparente
                 }
-                for (let i = 1; i < 5; i++) {
-                    if (localStorage.getItem(`semestre${i}`)) {
+                for (let i = 5; i < 11; i++) {
+                    if (localStorage.getItem(`Semestre ${i}`)) {
                         try {
-                            this[`semestre${i}`] = JSON.parse(localStorage.getItem(`semestre${i}`));
+                            this[`Semestre ${i}`] = JSON.parse(localStorage.getItem(`Semestre ${i}`));
                         } catch(e) {
                             localStorage.removeItem(`semestre${i}`);
                         }
@@ -473,7 +633,7 @@
                 },
                 saveData() {
                     if (this.save_data) {
-                        localStorage.setItem(this.semestreNameClean(), JSON.stringify(this[this.semestreNameClean()]));
+                        localStorage.setItem(this.semestre_selectionne, JSON.stringify(this[this.semestre_selectionne]));
                     }
                 },
                 valideInputClass(note) {
@@ -533,10 +693,10 @@
                 },
                 calculMoyenne() {
                     if (this.init_done) {
-                        if (this.checkRemplissage(this.semestreNameClean())) {
+                        if (this.checkRemplissage(this.semestre_selectionne)) {
                             this.saveData();
                         } else {
-                            localStorage.removeItem(this.semestreNameClean());
+                            localStorage.removeItem(this.semestre_selectionne);
                         }
                     }
                     tot_notes = 0;

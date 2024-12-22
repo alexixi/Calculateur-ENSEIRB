@@ -1,0 +1,25 @@
+Père,Nature_Père,EP,Nature_EP,Intitulé,Nbre_Choix,ECTS,ECTS_CALCULE,Coefficient,,,,Volume CM,Volume CI,Volume TD,Volume TDM,Volume TP,Volume TPT,Volume TI,Volume PRJ,Responsables,Intervenants,Langue cours,Langue support,EP_POINTE,Thematique
+IAERS3,AN,ERS6,SEMESTRE,SEMESTRE 6 -  Réseaux et Informatique,,,30,,,,,0,0,0,0,0,0,0,0,Michael Clement,,Français,Français,ERS6,
+ERS6,SEMESTRE,ER6A,UE,UE RSI6-A - Sciences de l'ingénieur 2,,4,4,,,,,0,0,0,0,0,0,0,0,Patrice Tesson,,Français,Français,ER6A,
+ER6A,UE,ER6MA107,MODULE,Probabilités et statistiques,,,,0.3,,,,0,24,0,0,0,0,0,0,Patrice Tesson,Patrice Tesson:tesson,Français,Français,ER6MA107,
+ER6A,UE,ER6MA111,MODULE,Mathématiques de l'ingénieur,,,,0.4,,,,0,36,0,0,0,0,0,0,Patrice Tesson,Patrice Tesson:tesson,Français,Français,ER6MA111,
+ER6A,UE,ER6PH115,MODULE,Physique des technologies de l'information,,,,0.3,,,,0,28,0,0,0,0,0,0,Patrice Tesson,Patrice Tesson:tesson,Français,Français,ER6PH115,
+ERS6,SEMESTRE,ER6B,UE,UE RSI6-B - Internet et Réseaux,,4,4,,,,,0,0,0,0,0,0,0,0,Xavier Delord,,Français,Français,ER6B,
+ER6B,UE,ER6IF116,MODULE,Bases de données,,,,0.25,,,,0,28,0,0,0,0,0,0,Sylvain Lombardy,"Sylvain Lombardy:slombardy,Badreddine Yacine Yacheur:byyacheur",Français,Français,ER6IF116,
+ER6B,UE,ER6IT108,MODULE,Projet bases de données et internet,,,,0.25,,,,0,0,0,0,30,0,0,0,Sylvain Lombardy,"Louis Bigo:lbigo,Sylvain Lombardy:slombardy,Badreddine Yacine Yacheur:byyacheur",Français,Français,ER6IT108,"Ce projet permet la mise en oeuvre des connaissances abordées dans les modules de bases de données, de HTML et javascript."
+ER6B,UE,ER6IT109,MODULE,HTML et javascript,,,,0.25,,,,0,20,0,0,0,0,0,0,Josephine Calandra,Louis Bigo:lbigo,Français,Français,ER6IT109,"Ce cours est une initiation au HTML et à la programmation en javascript sous ses différents aspects: programmation événementielle, manipulation du DOM, programmation côté client et serveur."
+ER6B,UE,ER6RE113,MODULE,Architecture TCP/IP 2,,,,0.25,,,,0,20,4,0,0,0,0,0,Xavier Delord,Xavier Delord:delord,Français,Français,ER6RE113,Réseaux
+ERS6,SEMESTRE,ER6C,UE,UE RSI6-C - Informatique 2,,4,4,,,,,0,0,0,0,0,0,0,0,Sylvain Lombardy,,Français,Français,ER6C,
+ER6C,UE,ER6IF124,MODULE,Architecture des ordinateurs,,,,0.25,,,,0,28,0,0,0,0,0,0,Frédéric Mazoit,Frederic Mazoit:fmazoit,Français,Français,ER6IF124,
+ER6C,UE,ER6PG111,MODULE,Projet algorithmique et programmation en C,,,,0.2,,,,0,32,0,0,0,0,0,0,David Janin,"Julien Allali:allali,Sylvain Lombardy:slombardy",Français,Français,ER6PG111,
+ER6C,UE,ER6PG120,MODULE,Outils pour la progammation C,,,,0.15,,,,0,12,0,0,0,0,0,0,Julien Allali,Julien Allali:allali,Français,Français,ER6PG120,
+ER6C,UE,ER6IT110,MODULE,Analyse du cycle de vie,,,,0.15,,,,0,2,0,12,0,0,12,0,"Armande Capitaine,Annabelle Collin","Louis Bigo:lbigo,Annabelle Collin:acollin001",Français,Français,ER6IT110,Entreprise - environnement - société
+ER6C,UE,ER6IF128,MODULE,Algorithmique des graphes,,,,0.25,,,,0,26,0,0,0,0,0,0,,Sébastien Bouchard:sebouchard,Français,Français,ER6IF128,
+ERS6,SEMESTRE,ER6D,UE,UE RSI6-D - Culture de l'entreprise et langue anglaise - S06,,4,4,,,,,0,0,0,0,0,0,0,0,"Éric Astien,Claudia Brosnahan Couturier",,Français,Français,ES6E,
+ER6D,UE,EA6LC115,MODULE,Anglais - S06,,,,0.3,,,,0,0,30,0,0,0,0,0,Emilie Paillard,,Anglais,Anglais,EA6LC115,
+ER6D,UE,EA6CE170,MODULE,Performance en entreprise,,,,0.35,,,,19,0,6,0,0,0,0,0,Eric Astien,"Éric Astien:astien,Patrick Pujol:ppujol",Français,Français,EA6CE170,Cette thématique est essentiellement accès sur la gestion de projet.
+ER6D,UE,EA6CE171,MODULE,Relations en l'entreprise,,,,0.35,,,,28,0,0,0,0,0,0,0,"Emmanuelle Serres,Eric Astien,Regine Danet","Hugues Nicolas:hnicolas004,Emmanuelle Serres:eserres001",Français,Français,EA6CE171,"1. Permettre au futur ingénieur de sélectionner, animer et pérenniser les ressources humaines nécessaires à son activité
+2. Communication - Ressources Humaines - Management"
+ERS6,SEMESTRE,ER6E,UE,UE RSI6-E - Compétences développées en entreprise - première année,,14,14,,,,,0,0,0,0,0,0,0,0,Sylvain Lombardy,,Français,Français,ER6E,
+ER6E,UE,ER6PR110,MODULE,Rapport technique,,,,0,,,,0,0,0,0,0,0,0,0,Sylvain Lombardy,,Français,Français,ER6PR110,
+ER6E,UE,ER6CE171,MODULE,Intégration des connaissances et des compétences - première année,,,,0,,,,0,0,0,0,0,0,0,0,Mathieu Chevrie,,Français,Français,ER6CE171,
