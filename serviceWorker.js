@@ -26,7 +26,7 @@ self.addEventListener('activate', event => {
                 cacheNames.map(cacheName => {
                     if (cacheWhitelist.indexOf(cacheName) === -1) {
                         return caches.delete(cacheName);
-                    };
+                    }
                 })
             );
         })
@@ -38,7 +38,7 @@ function putToCache(request, response) {
     .then(cache => {
         cache.put(request, response);
     });
-};
+}
 
 self.addEventListener('fetch', event => {
     event.respondWith(
@@ -68,15 +68,15 @@ self.addEventListener('fetch', event => {
                         return caches.open(CACHE_NAME).then(cache => {
                             return cache.match('/');
                         });
-                    };
+                    }
                     return response;
-                };
+                }
                 if (event.request.method === "POST") {
                     return response;
-                };
+                }
                 if (event.request.url.startsWith('chrome-extension')) {
                     return response;
-                };
+                }
                 putToCache(event.request, response.clone());
                 return response;
             }).catch((err) => {
@@ -84,7 +84,7 @@ self.addEventListener('fetch', event => {
                     return caches.open(CACHE_NAME).then(cache => {
                         return cache.match('/');
                     });
-                };
+                }
             })
         })
     );
