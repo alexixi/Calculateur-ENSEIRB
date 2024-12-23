@@ -5,736 +5,736 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f3c420",
-  "theme_color": "#f3c420",
+  "background_color": "#fff8e0",
+  "theme_color": "#c79000",
   "orientation": "natural",
-  "description": "Calculez facilement votre moyenne par UE et moyenne générale par semestre",
+  "description": "Calculez facilement votre moyenne par UE et votre moyenne générale par semestre",
   "categories": ["education", "utilities"],
   "lang": "fr",
   "dir": "ltr",
   "prefer_related_applications": false,
   "related_applications": [],
   "icons": [
-      {
-        "src": "images/favicon.ico",
-        "sizes": "16x16 32x32 48x48 64x64 128x128 256x256",
-        "type": "image/x-icon",
-        "purpose": "any"
-      },
-      {
-        "src": "images/svg_icon.svg",
-        "sizes": "any",
-        "type": "image/svg",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SmallTile.scale-100.png",
-        "sizes": "71x71",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SmallTile.scale-125.png",
-        "sizes": "89x89",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SmallTile.scale-150.png",
-        "sizes": "107x107",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SmallTile.scale-200.png",
-        "sizes": "142x142",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SmallTile.scale-400.png",
-        "sizes": "284x284",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square150x150Logo.scale-100.png",
-        "sizes": "150x150",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square150x150Logo.scale-125.png",
-        "sizes": "188x188",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square150x150Logo.scale-150.png",
-        "sizes": "225x225",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square150x150Logo.scale-200.png",
-        "sizes": "300x300",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square150x150Logo.scale-400.png",
-        "sizes": "600x600",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Wide310x150Logo.scale-100.png",
-        "sizes": "310x150",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Wide310x150Logo.scale-125.png",
-        "sizes": "388x188",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Wide310x150Logo.scale-150.png",
-        "sizes": "465x225",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Wide310x150Logo.scale-200.png",
-        "sizes": "620x300",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Wide310x150Logo.scale-400.png",
-        "sizes": "1240x600",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/LargeTile.scale-100.png",
-        "sizes": "310x310",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/LargeTile.scale-125.png",
-        "sizes": "388x388",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/LargeTile.scale-150.png",
-        "sizes": "465x465",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/LargeTile.scale-200.png",
-        "sizes": "620x620",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/LargeTile.scale-400.png",
-        "sizes": "1240x1240",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.scale-100.png",
-        "sizes": "44x44",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.scale-125.png",
-        "sizes": "55x55",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.scale-150.png",
-        "sizes": "66x66",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.scale-200.png",
-        "sizes": "88x88",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.scale-400.png",
-        "sizes": "176x176",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/StoreLogo.scale-100.png",
-        "sizes": "50x50",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/StoreLogo.scale-125.png",
-        "sizes": "63x63",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/StoreLogo.scale-150.png",
-        "sizes": "75x75",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/StoreLogo.scale-200.png",
-        "sizes": "100x100",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/StoreLogo.scale-400.png",
-        "sizes": "200x200",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SplashScreen.scale-100.png",
-        "sizes": "620x300",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SplashScreen.scale-125.png",
-        "sizes": "775x375",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SplashScreen.scale-150.png",
-        "sizes": "930x450",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SplashScreen.scale-200.png",
-        "sizes": "1240x600",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/SplashScreen.scale-400.png",
-        "sizes": "2480x1200",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-16.png",
-        "sizes": "16x16",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-20.png",
-        "sizes": "20x20",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-24.png",
-        "sizes": "24x24",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-30.png",
-        "sizes": "30x30",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-32.png",
-        "sizes": "32x32",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-36.png",
-        "sizes": "36x36",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-40.png",
-        "sizes": "40x40",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-44.png",
-        "sizes": "44x44",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-48.png",
-        "sizes": "48x48",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-60.png",
-        "sizes": "60x60",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-64.png",
-        "sizes": "64x64",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-72.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-80.png",
-        "sizes": "80x80",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-96.png",
-        "sizes": "96x96",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.targetsize-256.png",
-        "sizes": "256x256",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-16.png",
-        "sizes": "16x16",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-20.png",
-        "sizes": "20x20",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-24.png",
-        "sizes": "24x24",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-30.png",
-        "sizes": "30x30",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-32.png",
-        "sizes": "32x32",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-36.png",
-        "sizes": "36x36",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-40.png",
-        "sizes": "40x40",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-44.png",
-        "sizes": "44x44",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-48.png",
-        "sizes": "48x48",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-60.png",
-        "sizes": "60x60",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-64.png",
-        "sizes": "64x64",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-72.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-80.png",
-        "sizes": "80x80",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-96.png",
-        "sizes": "96x96",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-256.png",
-        "sizes": "256x256",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-16.png",
-        "sizes": "16x16",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-20.png",
-        "sizes": "20x20",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-24.png",
-        "sizes": "24x24",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-30.png",
-        "sizes": "30x30",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-32.png",
-        "sizes": "32x32",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-36.png",
-        "sizes": "36x36",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-40.png",
-        "sizes": "40x40",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-44.png",
-        "sizes": "44x44",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-48.png",
-        "sizes": "48x48",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-60.png",
-        "sizes": "60x60",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-64.png",
-        "sizes": "64x64",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-72.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-80.png",
-        "sizes": "80x80",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-96.png",
-        "sizes": "96x96",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-256.png",
-        "sizes": "256x256",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/android/android-launchericon-512-512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/android/android-launchericon-192-192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/android/android-launchericon-144-144.png",
-        "sizes": "144x144",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/android/android-launchericon-96-96.png",
-        "sizes": "96x96",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/android/android-launchericon-72-72.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/android/android-launchericon-48-48.png",
-        "sizes": "48x48",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/maskable/maskable-android-launchericon-512-512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/maskable/maskable-android-launchericon-192-192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/maskable/maskable-android-launchericon-144-144.png",
-        "sizes": "144x144",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/maskable/maskable-android-launchericon-96-96.png",
-        "sizes": "96x96",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/maskable/maskable-android-launchericon-72-72.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/maskable/maskable-android-launchericon-48-48.png",
-        "sizes": "48x48",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/ios/16.png",
-        "sizes": "16x16",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/20.png",
-        "sizes": "20x20",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/29.png",
-        "sizes": "29x29",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/32.png",
-        "sizes": "32x32",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/40.png",
-        "sizes": "40x40",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/50.png",
-        "sizes": "50x50",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/57.png",
-        "sizes": "57x57",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/58.png",
-        "sizes": "58x58",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/60.png",
-        "sizes": "60x60",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/64.png",
-        "sizes": "64x64",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/72.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/76.png",
-        "sizes": "76x76",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/80.png",
-        "sizes": "80x80",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/87.png",
-        "sizes": "87x87",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/100.png",
-        "sizes": "100x100",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/114.png",
-        "sizes": "114x114",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/120.png",
-        "sizes": "120x120",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/128.png",
-        "sizes": "128x128",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/144.png",
-        "sizes": "144x144",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/152.png",
-        "sizes": "152x152",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/167.png",
-        "sizes": "167x167",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/180.png",
-        "sizes": "180x180",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/256.png",
-        "sizes": "256x256",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/images/ios/1024.png",
-        "sizes": "1024x1024",
-        "type": "image/png",
-        "purpose": "any"
-      }
+    {
+      "src": "images/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64 128x128 256x256",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "images/svg_icon.svg",
+      "sizes": "any",
+      "type": "image/svg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SmallTile.scale-100.png",
+      "sizes": "71x71",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SmallTile.scale-125.png",
+      "sizes": "89x89",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SmallTile.scale-150.png",
+      "sizes": "107x107",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SmallTile.scale-200.png",
+      "sizes": "142x142",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SmallTile.scale-400.png",
+      "sizes": "284x284",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square150x150Logo.scale-100.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square150x150Logo.scale-125.png",
+      "sizes": "188x188",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square150x150Logo.scale-150.png",
+      "sizes": "225x225",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square150x150Logo.scale-200.png",
+      "sizes": "300x300",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square150x150Logo.scale-400.png",
+      "sizes": "600x600",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Wide310x150Logo.scale-100.png",
+      "sizes": "310x150",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Wide310x150Logo.scale-125.png",
+      "sizes": "388x188",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Wide310x150Logo.scale-150.png",
+      "sizes": "465x225",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Wide310x150Logo.scale-200.png",
+      "sizes": "620x300",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Wide310x150Logo.scale-400.png",
+      "sizes": "1240x600",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/LargeTile.scale-100.png",
+      "sizes": "310x310",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/LargeTile.scale-125.png",
+      "sizes": "388x388",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/LargeTile.scale-150.png",
+      "sizes": "465x465",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/LargeTile.scale-200.png",
+      "sizes": "620x620",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/LargeTile.scale-400.png",
+      "sizes": "1240x1240",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.scale-100.png",
+      "sizes": "44x44",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.scale-125.png",
+      "sizes": "55x55",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.scale-150.png",
+      "sizes": "66x66",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.scale-200.png",
+      "sizes": "88x88",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.scale-400.png",
+      "sizes": "176x176",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/StoreLogo.scale-100.png",
+      "sizes": "50x50",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/StoreLogo.scale-125.png",
+      "sizes": "63x63",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/StoreLogo.scale-150.png",
+      "sizes": "75x75",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/StoreLogo.scale-200.png",
+      "sizes": "100x100",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/StoreLogo.scale-400.png",
+      "sizes": "200x200",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SplashScreen.scale-100.png",
+      "sizes": "620x300",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SplashScreen.scale-125.png",
+      "sizes": "775x375",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SplashScreen.scale-150.png",
+      "sizes": "930x450",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SplashScreen.scale-200.png",
+      "sizes": "1240x600",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/SplashScreen.scale-400.png",
+      "sizes": "2480x1200",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-20.png",
+      "sizes": "20x20",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-24.png",
+      "sizes": "24x24",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-30.png",
+      "sizes": "30x30",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-40.png",
+      "sizes": "40x40",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-44.png",
+      "sizes": "44x44",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-80.png",
+      "sizes": "80x80",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.targetsize-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-20.png",
+      "sizes": "20x20",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-24.png",
+      "sizes": "24x24",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-30.png",
+      "sizes": "30x30",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-40.png",
+      "sizes": "40x40",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-44.png",
+      "sizes": "44x44",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-80.png",
+      "sizes": "80x80",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-unplated_targetsize-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-20.png",
+      "sizes": "20x20",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-24.png",
+      "sizes": "24x24",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-30.png",
+      "sizes": "30x30",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-40.png",
+      "sizes": "40x40",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-44.png",
+      "sizes": "44x44",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-80.png",
+      "sizes": "80x80",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/windows11/Square44x44Logo.altform-lightunplated_targetsize-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android/android-launchericon-144-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android/android-launchericon-96-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android/android-launchericon-72-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android/android-launchericon-48-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/maskable/maskable-android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/maskable/maskable-android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/maskable/maskable-android-launchericon-144-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/maskable/maskable-android-launchericon-96-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/maskable/maskable-android-launchericon-72-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/maskable/maskable-android-launchericon-48-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/ios/16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/20.png",
+      "sizes": "20x20",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/29.png",
+      "sizes": "29x29",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/40.png",
+      "sizes": "40x40",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/50.png",
+      "sizes": "50x50",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/57.png",
+      "sizes": "57x57",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/58.png",
+      "sizes": "58x58",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/76.png",
+      "sizes": "76x76",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/80.png",
+      "sizes": "80x80",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/87.png",
+      "sizes": "87x87",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/100.png",
+      "sizes": "100x100",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/114.png",
+      "sizes": "114x114",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/120.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/167.png",
+      "sizes": "167x167",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/ios/1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ],
   "screenshots": [
     {
@@ -796,43 +796,43 @@
   ],
   "shortcuts": [
     {
-      "name": "Semestre 1",
-      "short_name": "S1",
-      "url": "/?semestre=1",
-      "description": "Sélectionne le semestre 1",
+      "name": "Semestre 5",
+      "short_name": "S5",
+      "url": "/?semestre=5",
+      "description": "Sélectionne le semestre 5",
       "icons": [
         {
-          "src": "/images/shortcuts_icons/semestre_1/android-launchericon-512-512.png",
+          "src": "/images/shortcuts_icons/semestre_5/android-launchericon-512-512.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_1/android-launchericon-192-192.png",
+          "src": "/images/shortcuts_icons/semestre_5/android-launchericon-192-192.png",
           "sizes": "192x192",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_1/android-launchericon-144-144.png",
+          "src": "/images/shortcuts_icons/semestre_5/android-launchericon-144-144.png",
           "sizes": "144x144",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_1/android-launchericon-96-96.png",
+          "src": "/images/shortcuts_icons/semestre_5/android-launchericon-96-96.png",
           "sizes": "96x96",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_1/android-launchericon-72-72.png",
+          "src": "/images/shortcuts_icons/semestre_5/android-launchericon-72-72.png",
           "sizes": "72x72",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_1/android-launchericon-48-48.png",
+          "src": "/images/shortcuts_icons/semestre_5/android-launchericon-48-48.png",
           "sizes": "48x48",
           "type": "image/png",
           "purpose": "any"
@@ -840,43 +840,43 @@
       ]
     },
     {
-      "name": "Semestre 2",
-      "short_name": "S2",
-      "url": "/?semestre=2",
-      "description": "Sélectionne le semestre 2",
+      "name": "Semestre 6",
+      "short_name": "S6",
+      "url": "/?semestre=6",
+      "description": "Sélectionne le semestre 6",
       "icons": [
         {
-          "src": "/images/shortcuts_icons/semestre_2/android-launchericon-512-512.png",
+          "src": "/images/shortcuts_icons/semestre_6/android-launchericon-512-512.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_2/android-launchericon-192-192.png",
+          "src": "/images/shortcuts_icons/semestre_6/android-launchericon-192-192.png",
           "sizes": "192x192",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_2/android-launchericon-144-144.png",
+          "src": "/images/shortcuts_icons/semestre_6/android-launchericon-144-144.png",
           "sizes": "144x144",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_2/android-launchericon-96-96.png",
+          "src": "/images/shortcuts_icons/semestre_6/android-launchericon-96-96.png",
           "sizes": "96x96",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_2/android-launchericon-72-72.png",
+          "src": "/images/shortcuts_icons/semestre_6/android-launchericon-72-72.png",
           "sizes": "72x72",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_2/android-launchericon-48-48.png",
+          "src": "/images/shortcuts_icons/semestre_6/android-launchericon-48-48.png",
           "sizes": "48x48",
           "type": "image/png",
           "purpose": "any"
@@ -884,43 +884,43 @@
       ]
     },
     {
-      "name": "Semestre 3",
-      "short_name": "S3",
-      "url": "/?semestre=3",
-      "description": "Sélectionne le semestre 3",
+      "name": "Semestre 7",
+      "short_name": "S7",
+      "url": "/?semestre=7",
+      "description": "Sélectionne le semestre 7",
       "icons": [
         {
-          "src": "/images/shortcuts_icons/semestre_3/android-launchericon-512-512.png",
+          "src": "/images/shortcuts_icons/semestre_7/android-launchericon-512-512.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_3/android-launchericon-192-192.png",
+          "src": "/images/shortcuts_icons/semestre_7/android-launchericon-192-192.png",
           "sizes": "192x192",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_3/android-launchericon-144-144.png",
+          "src": "/images/shortcuts_icons/semestre_7/android-launchericon-144-144.png",
           "sizes": "144x144",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_3/android-launchericon-96-96.png",
+          "src": "/images/shortcuts_icons/semestre_7/android-launchericon-96-96.png",
           "sizes": "96x96",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_3/android-launchericon-72-72.png",
+          "src": "/images/shortcuts_icons/semestre_7/android-launchericon-72-72.png",
           "sizes": "72x72",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_3/android-launchericon-48-48.png",
+          "src": "/images/shortcuts_icons/semestre_7/android-launchericon-48-48.png",
           "sizes": "48x48",
           "type": "image/png",
           "purpose": "any"
@@ -928,43 +928,131 @@
       ]
     },
     {
-      "name": "Semestre 4",
-      "short_name": "S4",
-      "url": "/?semestre=4",
-      "description": "Sélectionne le semestre 4",
+      "name": "Semestre 8",
+      "short_name": "S8",
+      "url": "/?semestre=8",
+      "description": "Sélectionne le semestre 8",
       "icons": [
         {
-          "src": "/images/shortcuts_icons/semestre_4/android-launchericon-512-512.png",
+          "src": "/images/shortcuts_icons/semestre_8/android-launchericon-512-512.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_4/android-launchericon-192-192.png",
+          "src": "/images/shortcuts_icons/semestre_8/android-launchericon-192-192.png",
           "sizes": "192x192",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_4/android-launchericon-144-144.png",
+          "src": "/images/shortcuts_icons/semestre_8/android-launchericon-144-144.png",
           "sizes": "144x144",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_4/android-launchericon-96-96.png",
+          "src": "/images/shortcuts_icons/semestre_8/android-launchericon-96-96.png",
           "sizes": "96x96",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_4/android-launchericon-72-72.png",
+          "src": "/images/shortcuts_icons/semestre_8/android-launchericon-72-72.png",
           "sizes": "72x72",
           "type": "image/png",
           "purpose": "any"
         },
         {
-          "src": "/images/shortcuts_icons/semestre_4/android-launchericon-48-48.png",
+          "src": "/images/shortcuts_icons/semestre_8/android-launchericon-48-48.png",
+          "sizes": "48x48",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Semestre 9",
+      "short_name": "S9",
+      "url": "/?semestre=9",
+      "description": "Sélectionne le semestre 9",
+      "icons": [
+        {
+          "src": "/images/shortcuts_icons/semestre_9/android-launchericon-512-512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_9/android-launchericon-192-192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_9/android-launchericon-144-144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_9/android-launchericon-96-96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_9/android-launchericon-72-72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_9/android-launchericon-48-48.png",
+          "sizes": "48x48",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Semestre 10",
+      "short_name": "S10",
+      "url": "/?semestre=10",
+      "description": "Sélectionne le semestre 10",
+      "icons": [
+        {
+          "src": "/images/shortcuts_icons/semestre_10/android-launchericon-512-512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_10/android-launchericon-192-192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_10/android-launchericon-144-144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_10/android-launchericon-96-96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_10/android-launchericon-72-72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/images/shortcuts_icons/semestre_10/android-launchericon-48-48.png",
           "sizes": "48x48",
           "type": "image/png",
           "purpose": "any"
