@@ -29,6 +29,12 @@ self.addEventListener('activate', event => {
                     }
                 })
             );
+        }).then(() => {
+            return self.clients.matchAll({ type: 'window' }).then(clients => {
+                for (const client of clients) {
+                    client.navigate(client.url);
+                }
+            });
         })
     );
 });
