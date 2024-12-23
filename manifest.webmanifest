@@ -3,7 +3,7 @@
   "name": "Calculateur moyenne ENSEIRB",
   "short_name": "Moyenne ENSEIRB",
   "start_url": "/moyenne-enseirb/",
-  "scope": "/",
+  "scope": "/moyenne-enseirb/",
   "display": "standalone",
   "background_color": "#fff8e0",
   "theme_color": "#c79000",
